@@ -1,0 +1,30 @@
+// == PARAGRAPH ==
+@mixin text-large {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+}
+
+@mixin text-medium {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+
+@mixin text-small {
+    font-size:  .875rem;
+    line-height: 1.25rem;
+}
+
+// == HEADINGS ==
+@mixin h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+}
+
+@mixin h2 {
+    font-size: 3rem;
+    line-height: 3.3rem;
+}
+
+@mixin h4 {
+    @include text-small;
+}
