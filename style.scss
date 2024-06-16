@@ -11,6 +11,7 @@
 @import "partials/variables";
 
 @import "components/header";
+@import "components/footer";
 
 
 
@@ -22,4 +23,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
+}
+
+.m-8 {
+    margin: 0 .5rem 0 .5rem;
 }

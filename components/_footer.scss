@@ -1,0 +1,105 @@
+.section-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $second-color-black;
+
+    .footer-first-content {
+        display: flex;
+        padding: 5.125rem 0 5.4375rem 0;
+        max-width: 90rem;
+        margin: 0 auto;
+
+        .footer-social-content {
+            display: flex;
+            flex-direction: column;
+
+            .footer-logo {
+                margin: 0 11.25rem 1.3125rem 0;
+
+                p {
+                    @include text-xxlarge;
+                    color: $primary-color;
+                    font-family: 'Taviraj';
+                    font-weight: 600;
+                }
+            }
+
+            .footer-other-logos {
+                display: flex;
+                gap: .5625rem;
+            }
+        }
+
+        .footer-info {
+            display: flex;
+            gap: 4rem;
+
+            .footer-info-details {
+                margin-right: 4rem;
+                h4 {
+                    @include h4;
+                    color: $primary-color;
+                    margin-bottom: .25rem;
+                    font-weight: 400;
+                }
+                
+                p {
+                    @include text-medium;
+                    color: $primary-color;
+                    font-weight: 300;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    .footer-border-top {
+        border-top: 1px solid $primary-color-opacity;
+
+        .footer-second-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 90rem;
+            margin: 2.25rem auto;
+
+            .terms-and-privacy {
+                ul {
+                    display: flex;
+                    gap: 2rem;
+
+                    li {
+                        list-style-type: none;
+
+                        a {
+                            color: $primary-color;
+                            @include text-xsmall;
+                            font-weight: 400;
+                            opacity: 40%;
+                        }
+                    }
+                }
+            }
+
+            .site-authors {
+                display: flex;
+
+                .credits-normal-text {
+                    @include text-xsmall;
+                    color: $primary-color;
+                    opacity: 40%;
+                    font-weight: 400;
+                }
+
+                a {
+                    text-decoration: none;
+                    @include text-xsmall;
+                    font-weight: 400;
+                    color: $primary-color;
+                    opacity: 70%;
+                    margin-left: .25rem;
+                    
+                }
+            }
+        }
+    }
+}

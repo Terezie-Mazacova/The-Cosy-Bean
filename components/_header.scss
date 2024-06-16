@@ -10,11 +10,13 @@
             display: flex;
             flex-direction: column;
             gap: 4rem;
+            max-width: 90rem;
+            margin: 0 auto;
 
             .header-menu {
                 display: flex;
-                justify-content: space-evenly;
-                padding: 2rem 5rem;
+                justify-content: space-around;
+                padding: 2rem 0;
     
                 .header-logo {
                     a {
@@ -47,7 +49,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 15.125rem 13.9375rem 22.125rem 13.9375rem;
+                padding: 15.125rem 0 22.125rem 0;
     
                 .hero-content {
                     h1 {
@@ -55,6 +57,7 @@
                         color: $primary-color;
                         font-weight: 300;
                         text-align: center;
+                        max-width: 62.125rem;
                     }
                 }
 

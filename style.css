@@ -12,11 +12,13 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 .section-header .header-bg .header-content .header-menu {
   display: flex;
-  justify-content: space-evenly;
-  padding: 2rem 5rem;
+  justify-content: space-around;
+  padding: 2rem 0;
 }
 .section-header .header-bg .header-content .header-menu .header-logo a {
   font-size: 1.25rem;
@@ -44,7 +46,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15.125rem 13.9375rem 22.125rem 13.9375rem;
+  padding: 15.125rem 0 22.125rem 0;
 }
 .section-header .header-bg .header-content .section-hero .hero-content h1 {
   font-size: 5rem;
@@ -52,6 +54,7 @@
   color: rgb(255, 255, 255);
   font-weight: 300;
   text-align: center;
+  max-width: 62.125rem;
 }
 .section-header .header-bg .header-content .section-hero .header-main-btn button {
   font-family: "Inter", sans-serif;
@@ -68,6 +71,99 @@
   color: rgb(20, 20, 20);
 }
 
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(10, 8, 6);
+}
+.section-footer .footer-first-content {
+  display: flex;
+  padding: 5.125rem 0 5.4375rem 0;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.section-footer .footer-first-content .footer-social-content {
+  display: flex;
+  flex-direction: column;
+}
+.section-footer .footer-first-content .footer-social-content .footer-logo {
+  margin: 0 11.25rem 1.3125rem 0;
+}
+.section-footer .footer-first-content .footer-social-content .footer-logo p {
+  font-size: 1.9888rem;
+  line-height: 2.1875rem;
+  color: rgb(255, 255, 255);
+  font-family: "Taviraj";
+  font-weight: 600;
+}
+.section-footer .footer-first-content .footer-social-content .footer-other-logos {
+  display: flex;
+  gap: 0.5625rem;
+}
+.section-footer .footer-first-content .footer-info {
+  display: flex;
+  gap: 4rem;
+}
+.section-footer .footer-first-content .footer-info .footer-info-details {
+  margin-right: 4rem;
+}
+.section-footer .footer-first-content .footer-info .footer-info-details h4 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+}
+.section-footer .footer-first-content .footer-info .footer-info-details p {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  white-space: nowrap;
+}
+.section-footer .footer-border-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.section-footer .footer-border-top .footer-second-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90rem;
+  margin: 2.25rem auto;
+}
+.section-footer .footer-border-top .footer-second-content .terms-and-privacy ul {
+  display: flex;
+  gap: 2rem;
+}
+.section-footer .footer-border-top .footer-second-content .terms-and-privacy ul li {
+  list-style-type: none;
+}
+.section-footer .footer-border-top .footer-second-content .terms-and-privacy ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  opacity: 40%;
+}
+.section-footer .footer-border-top .footer-second-content .site-authors {
+  display: flex;
+}
+.section-footer .footer-border-top .footer-second-content .site-authors .credits-normal-text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(255, 255, 255);
+  opacity: 40%;
+  font-weight: 400;
+}
+.section-footer .footer-border-top .footer-second-content .site-authors a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  opacity: 70%;
+  margin-left: 0.25rem;
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -76,4 +172,8 @@
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+.m-8 {
+  margin: 0 0.5rem 0 0.5rem;
 }/*# sourceMappingURL=style.css.map */

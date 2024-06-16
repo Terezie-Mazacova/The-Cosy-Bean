@@ -1,4 +1,8 @@
 // == PARAGRAPH ==
+@mixin text-xxlarge {
+    font-size: 1.9888rem;
+    line-height: 2.1875rem;
+}
 @mixin text-large {
     font-size: 1.25rem;
     line-height: 1.375rem;
@@ -31,7 +35,7 @@
 }
 
 @mixin h4 {
-    @include text-small;
+    @include text-xsmall;
 }
 
 // == BUTTON ==
