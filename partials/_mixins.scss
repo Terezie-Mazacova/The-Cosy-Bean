@@ -10,7 +10,12 @@
 }
 
 @mixin text-small {
-    font-size:  .875rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@mixin text-xsmall {
+    font-size: .875rem;
     line-height: 1.25rem;
 }
 
@@ -27,4 +32,20 @@
 
 @mixin h4 {
     @include text-small;
+}
+
+// == BUTTON ==
+@mixin main-btn {
+    font-family: 'Inter', sans-serif;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    border: .0625rem;
+    background-color: $primary-color;
+    
+    p {
+        @include text-small;
+        font-weight: 600;
+        color: $second-color-dark;
+    }
+
 }
