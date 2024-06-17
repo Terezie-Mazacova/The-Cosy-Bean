@@ -28,3 +28,68 @@ body {
 .m-8 {
     margin: 0 .5rem 0 .5rem;
 }
+.m-16 {
+    margin: 0 1rem;
+}
+
+// == Introductory Section About Our Story ==
+.story-section {
+    padding: 6rem 0;
+    background-color: $second-color;
+
+    .story-container {
+        display: flex;
+        align-items: center;
+        max-width: 90rem;
+        margin: 0 auto;
+
+        .story-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 0 3.5rem 0 0;
+            width: 50%;
+
+            .story-chapter {
+                display: flex;
+    
+                p {
+                    @include text-xsmall;
+                    font-weight: 400;
+                    color: $primary-color;
+                    opacity: 50%;
+                }
+            }
+    
+            .story-content {
+                max-width: 32rem;
+                h2 {
+                    @include h2;
+                    font-weight: 300;
+                    color: $primary-color;
+                    margin-bottom: 1rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    @include text-medium;
+                    font-weight: 400;
+                    color: $primary-color;
+                    opacity: 70%;
+                }
+            }
+
+            .story-section-btn button {
+                @include main-btn;
+            }
+        }
+
+        .story-section-img {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
