@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -77,15 +78,29 @@
             <!--Filter section-->
         </div>
 
-        <div>
+        <!--Photo Gallery Section-->
+        <section class="section-photo-gallery">
             <div>
                 <h2>#cozybean</h2>
             </div>
 
-            <div>
-                <!--slider-->
+            <div class="main-splide-content section-slider">
+                <div class="splide slider1" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="./_img/image3.jpg" alt="image"></li>
+                                <li class="splide__slide"><img src="./_img/image3.jpg" alt="image"></li>
+                                <li class="splide__slide"><img src="./_img/image3.jpg" alt="image"></li>
+                                <li class="splide__slide"><img src="./_img/image3.jpg" alt="image"></li>
+                                <li class="splide__slide"><img src="./_img/image3.jpg" alt="image"></li>
+                                <li class="splide__slide"><img src="./_img/image3.jpg" alt="image"></li>
+                                <li class="splide__slide"><img src="./_img/image3.jpg" alt="image"></li>
+                                <li class="splide__slide"><img src="./_img/image3.jpg" alt="image"></li>
+                            </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
@@ -150,6 +165,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

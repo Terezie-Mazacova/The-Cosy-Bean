@@ -32,6 +32,10 @@ body {
     margin: 0 1rem;
 }
 
+.h-524 {
+    height: 524px;
+}
+
 // == Introductory Section About Our Story ==
 .story-section {
     padding: 6rem 0;
@@ -91,5 +95,22 @@ body {
                 width: 100%;
             }
         }
+    }
+}
+
+// == Photo Gallery Section ==
+.section-photo-gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: $second-color;
+    padding: 6rem 0;
+
+    h2 {
+        @include h2;
+        text-align: center;
+        font-weight: 300;
+        color: $primary-color;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
     }
 }
