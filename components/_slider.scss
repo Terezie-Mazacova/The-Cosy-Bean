@@ -1,0 +1,13 @@
+// == SLIDER1 ==
+.splide__track {
+    h2 {
+        @include h2;
+        font-weight: 300;
+        color: $primary-color;
+        text-align: center;
+    }
+}
+
+.filter-icon {
+    width: 80px !important;
+}

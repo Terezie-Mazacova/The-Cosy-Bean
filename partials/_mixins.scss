@@ -51,5 +51,16 @@
         font-weight: 600;
         color: $second-color-dark;
     }
+}
 
+// == CHAPTER ==
+@mixin chapter {
+    display: flex;
+
+    p {
+        @include text-xsmall;
+        font-weight: 400;
+        color: $primary-color;
+        opacity: 50%;
+    }
 }

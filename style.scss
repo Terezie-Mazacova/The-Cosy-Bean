@@ -12,6 +12,7 @@
 
 @import "components/header";
 @import "components/footer";
+@import "components/slider";
 
 
 
@@ -55,16 +56,9 @@ body {
             width: 50%;
 
             .story-chapter {
-                display: flex;
-    
-                p {
-                    @include text-xsmall;
-                    font-weight: 400;
-                    color: $primary-color;
-                    opacity: 50%;
-                }
+                @include chapter;
             }
-    
+            
             .story-content {
                 max-width: 32rem;
                 h2 {
@@ -97,6 +91,36 @@ body {
         }
     }
 }
+
+// == Section Filter Menu ==
+.filter-container {
+    padding: 6rem 0;
+    background-color: $special-section-bg;
+    .filter-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 90rem;
+        margin: 0 auto;
+
+        .filter-chapter {
+            @include chapter;
+        }
+
+        .filter-heading {
+            h2 {
+                @include h2;
+                font-weight: 300;
+                color: $primary-color;
+                text-transform: uppercase;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+
+
+
 
 // == Photo Gallery Section ==
 .section-photo-gallery {

@@ -164,6 +164,18 @@
   margin-left: 0.25rem;
 }
 
+.splide__track h2 {
+  font-size: 3rem;
+  line-height: 3.3rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.filter-icon {
+  width: 80px !important;
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -249,6 +261,35 @@ body {
 }
 .story-section .story-container .story-section-img img {
   width: 100%;
+}
+
+.filter-container {
+  padding: 6rem 0;
+  background-color: rgb(115, 36, 2);
+}
+.filter-container .filter-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.filter-container .filter-info .filter-chapter {
+  display: flex;
+}
+.filter-container .filter-info .filter-chapter p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  opacity: 50%;
+}
+.filter-container .filter-info .filter-heading h2 {
+  font-size: 3rem;
+  line-height: 3.3rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-top: 2rem;
 }
 
 .section-photo-gallery {
