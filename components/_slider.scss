@@ -23,4 +23,28 @@
     }
 }
 
+// == CHANGE OF DIRECTION ==
+.slider1 .splide-track1,
+.slider1 .splide-list1 {
+    direction: rtl;
+}
+
+.slider1 .splide1 {
+    direction: ltr;
+}
+
+
+
+
+// == SLIDER2 ==
+.splide2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.splide2:nth-child(even) {
+    height: 450px;
+    overflow: hidden;
+}
+
 

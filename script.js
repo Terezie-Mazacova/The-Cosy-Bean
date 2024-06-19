@@ -7,7 +7,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
         autoplay: true,
         interval: 1000,
         speed: 900000,
-        arrows: false
+        arrows: false,
+        direction: 'rtl'
     });
     splide1.mount();
 
@@ -19,7 +20,21 @@ document.addEventListener( 'DOMContentLoaded', function() {
         autoplay: true,
         interval: 1000,
         speed: 900000,
-        arrows: false
+        arrows: false,
+        breakpoints: {
+            1200: {
+                perPage: 3,
+                gap: '15px',
+            },
+            992: {
+                perPage: 2,
+                gap: '10px',
+            },
+            768: {
+                perPage: 1,
+                gap: '5px',
+            }
+        }
     });
     splide2.mount();
 } );
