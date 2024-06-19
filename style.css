@@ -164,16 +164,24 @@
   margin-left: 0.25rem;
 }
 
-.splide__track h2 {
+.section-slider {
+  background-color: rgb(19, 19, 19);
+  padding: 4.6875rem 0 5.125rem 0;
+  max-width: 140rem;
+  margin: 0 auto;
+}
+.section-slider .splide__track .splide1-content {
+  display: flex;
+  align-items: center;
+}
+.section-slider .splide__track .splide1-content h2 {
   font-size: 3rem;
   line-height: 3.3rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
   text-align: center;
-}
-
-.filter-icon {
-  width: 80px !important;
+  margin-left: 1.5rem;
+  text-transform: uppercase;
 }
 
 *, *::before, *::after {

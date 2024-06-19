@@ -1,13 +1,26 @@
 // == SLIDER1 ==
-.splide__track {
-    h2 {
-        @include h2;
-        font-weight: 300;
-        color: $primary-color;
-        text-align: center;
+.section-slider {
+    background-color: $second-color;
+    padding: 4.6875rem 0 5.125rem 0;
+    max-width: 140rem;
+    margin: 0 auto;
+
+    .splide__track {
+        .splide1-content {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                @include h2;
+                font-weight: 300;
+                color: $primary-color;
+                text-align: center;
+                margin-left: 1.5rem;
+                text-transform: uppercase;
+            }
+        }
+        
     }
 }
 
-.filter-icon {
-    width: 80px !important;
-}
+
