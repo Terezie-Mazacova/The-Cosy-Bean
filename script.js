@@ -38,3 +38,31 @@ document.addEventListener( 'DOMContentLoaded', function() {
     });
     splide2.mount();
 } );
+
+
+
+const filterButtons = document.querySelectorAll('.filtermenu li')
+const filterItems = document.querySelectorAll('.filter-card')
+
+
+filterButtons.forEach((button) =>{
+    button.addEventListener('click', () =>{
+        renderFilterItems(button.dataset.filter)
+    })
+})
+
+function renderFilterItems(query){
+    filterItems.forEach((item) =>{
+        if(query === 'all'){
+            item.classList.remove('hidden')
+        }
+        else {
+            if (item.classList.contains(query)){
+                item.classList.remove('hidden')
+            }
+            else {
+                item.classList.add('hidden')
+            }
+        }
+    })
+}

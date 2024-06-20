@@ -93,9 +93,10 @@ body {
 }
 
 // == Section Filter Menu ==
-.filter-container {
+.filter-main {
     padding: 6rem 0;
     background-color: $special-section-bg;
+
     .filter-info {
         display: flex;
         flex-direction: column;
@@ -116,8 +117,64 @@ body {
             }
         }
     }
+
+
+
+
+    .filter-container {
+        display: flex;
+        max-width: 90rem;
+        margin: 2.5rem auto;
+        gap: 5rem;
+
+        .filter-nav {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                li {
+                    list-style-type: none;
+                    @include text-large;
+                    color: $primary-color;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    opacity: 80%;
+                    padding: .5rem 0;
+                }
+            }
+        }
+    }
 }
 
+.filter-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.hidden {
+    display: none;
+}
+.post-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.post-card {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    gap: 16px;
+    border-radius: 12px;
+    background: #F3F3F5;
+    width: 100%;
+}
+.post-card:nth-child(1),
+.post-card:nth-child(2),
+.post-card:nth-child(3) {
+    display: inline-block;
+}
 
 
 
