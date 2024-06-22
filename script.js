@@ -1,5 +1,4 @@
 document.addEventListener( 'DOMContentLoaded', function() {
-    console.log("Tomas smrdi jako prase")
     var splide1 = new Splide( '.slider1', {
         perPage: 2,
         gap: '5px',
