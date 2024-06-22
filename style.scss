@@ -25,7 +25,9 @@
 body {
     font-family: 'Inter', sans-serif;
 }
-
+.m-w-unset {
+    max-width: unset !important;
+}
 .m-8 {
     margin: 0 .5rem 0 .5rem;
 }
