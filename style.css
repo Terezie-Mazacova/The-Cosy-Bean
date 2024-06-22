@@ -204,6 +204,13 @@
   overflow: hidden;
 }
 
+.story-begin {
+  width: 100% !important;
+}
+.story-begin h2 {
+  text-transform: lowercase !important;
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -212,6 +219,10 @@
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+.m-w-unset {
+  max-width: unset !important;
 }
 
 .m-8 {
