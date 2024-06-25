@@ -6,3 +6,64 @@
         text-transform: lowercase !important;
     }
 }
+
+// == INCREMENTING COUNTER ==
+.incrementing-counter {
+    padding: 6rem 0;
+    background-color: $second-color;
+
+    .counter-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        max-width: 90rem;
+        margin: 0 auto;
+
+        .counter-title {
+            h2 {
+                @include h2;
+                font-weight: 300;
+                color: $primary-color;
+                text-transform: uppercase;
+            }
+        }
+    
+        .social-counter-container {
+            display: flex;
+            padding: 0 2rem;
+            gap: 2.5rem;
+    
+    
+            .counter-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding-right: 3.5rem;
+                gap: 1rem;
+    
+                .counter {
+                    font-family: 'Taviraj', sans-serif;
+                    @include h1;
+                    font-weight: 300;
+                    color: $primary-color;
+                }
+    
+                span {
+                    @include text-medium;
+                    font-weight: 400;
+                    color: $primary-color;
+                    opacity: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .social-counter-container {
+        flex-direction: column;
+    }
+}
