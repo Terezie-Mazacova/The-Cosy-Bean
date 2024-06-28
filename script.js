@@ -20,6 +20,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         autoplay: true,
         interval: 1000,
         speed: 900000,
+        autoWidth: true,
         arrows: false,
         breakpoints: {
             1200: {

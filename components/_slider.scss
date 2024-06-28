@@ -37,13 +37,24 @@
 
 
 // == SLIDER2 ==
+
 .splide2 img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: cover;
+    object-position: top;
+    
 }
 .splide2:nth-child(even) {
-    height: 450px;
+    height: 324px;
+    width: 324px;
+    overflow: hidden;
+}
+
+.splide2:nth-child(odd) {
+    height: 400px;
+    width: 400px;
     overflow: hidden;
 }
 

@@ -199,12 +199,23 @@
 
 .splide2 img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .splide2:nth-child(even) {
-  height: 450px;
+  height: 324px;
+  width: 324px;
+  overflow: hidden;
+}
+
+.splide2:nth-child(odd) {
+  height: 400px;
+  width: 400px;
   overflow: hidden;
 }
 
@@ -459,6 +470,14 @@ body {
   flex-direction: column;
   background-color: rgb(19, 19, 19);
   padding: 6rem 0;
+}
+.section-photo-gallery .section-follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 .section-photo-gallery h2 {
   font-size: 3rem;
