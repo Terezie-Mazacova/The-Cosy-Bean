@@ -17,7 +17,7 @@
 }
 .section-header .header-bg .header-content .header-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 2rem 0;
 }
 .section-header .header-bg .header-content .header-menu .header-nav ul {
@@ -35,6 +35,7 @@
   font-weight: 400;
 }
 .section-header .header-bg .header-content .header-menu .header-logo a {
+  font-family: "Taviraj", sans-serif;
   font-size: 1.25rem;
   line-height: 1.375rem;
   text-decoration: none;
