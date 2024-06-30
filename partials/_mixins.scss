@@ -1,4 +1,8 @@
 // == PARAGRAPH ==
+@mixin text-huge {
+    font-size: 4.125rem;
+    line-height: 4.5375rem;
+}
 @mixin text-xxlarge {
     font-size: 1.9888rem;
     line-height: 2.1875rem;
@@ -30,8 +34,8 @@
 }
 
 @mixin h2 {
-    font-size: 3rem;
-    line-height: 3.3rem;
+    font-size: 4rem;
+    line-height: 4.4rem;
 }
 
 @mixin h4 {
@@ -63,4 +67,12 @@
         color: $primary-color;
         opacity: 50%;
     }
+}
+
+// == STYLE == 
+@mixin italic-h2 {
+    font-style: italic;
+    font-family: 'Taviraj', sans-serif;
+    font-weight: 300;
+    color: $primary-color;
 }

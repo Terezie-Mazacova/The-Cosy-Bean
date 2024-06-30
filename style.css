@@ -61,6 +61,10 @@
   text-align: center;
   max-width: 62.125rem;
 }
+.section-header .header-bg .header-content .section-hero .hero-content h1 .italic-text {
+  font-style: italic;
+  font-family: "Taviraj", sans-serif;
+}
 .section-header .header-bg .header-content .section-hero .header-main-btn button {
   font-family: "Inter", sans-serif;
   padding: 0.75rem 1.5rem;
@@ -180,8 +184,8 @@
   align-items: center;
 }
 .section-slider .splide__track .splide1-content h2 {
-  font-size: 3rem;
-  line-height: 3.3rem;
+  font-size: 4rem;
+  line-height: 4.4rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -241,8 +245,8 @@
   margin: 0 auto;
 }
 .incrementing-counter .counter-wrapper .counter-title h2 {
-  font-size: 3rem;
-  line-height: 3.3rem;
+  font-size: 4rem;
+  line-height: 4.4rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -337,8 +341,8 @@ body {
   max-width: 32rem;
 }
 .story-section .story-container .story-info .story-content h2 {
-  font-size: 3rem;
-  line-height: 3.3rem;
+  font-size: 4rem;
+  line-height: 4.4rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
   margin-bottom: 1rem;
@@ -392,8 +396,8 @@ body {
   opacity: 50%;
 }
 .filter-main .filter-info .filter-heading h2 {
-  font-size: 3rem;
-  line-height: 3.3rem;
+  font-size: 4rem;
+  line-height: 4.4rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -481,8 +485,8 @@ body {
   margin: 0 auto;
 }
 .section-photo-gallery h2 {
-  font-size: 3rem;
-  line-height: 3.3rem;
+  font-size: 4rem;
+  line-height: 4.4rem;
   text-align: center;
   font-weight: 300;
   color: rgb(255, 255, 255);
