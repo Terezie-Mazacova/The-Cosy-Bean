@@ -9,9 +9,10 @@
         .splide1-content {
             display: flex;
             align-items: center;
+            cursor: grab;
 
-            h2 {
-                @include h2;
+            h3 {
+                @include h3;
                 font-weight: 300;
                 color: $primary-color;
                 text-align: center;
@@ -37,7 +38,6 @@
 
 
 // == SLIDER2 ==
-
 .splide2 img {
     width: 100%;
     height: 100%;

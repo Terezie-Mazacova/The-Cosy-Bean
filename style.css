@@ -182,10 +182,11 @@
 .section-slider .splide__track .splide1-content {
   display: flex;
   align-items: center;
+  cursor: grab;
 }
-.section-slider .splide__track .splide1-content h2 {
-  font-size: 4rem;
-  line-height: 4.4rem;
+.section-slider .splide__track .splide1-content h3 {
+  font-size: 3rem;
+  line-height: 3.3rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -410,6 +411,15 @@ body {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   margin-top: 2rem;
+  max-width: 34.375rem;
+}
+.filter-main .filter-info .filter-heading h2 .style-italic {
+  font-style: italic;
+  font-family: "Taviraj", sans-serif;
+  font-weight: 300;
+  font-size: 4.125rem;
+  line-height: 4.5375rem;
+  color: rgb(255, 255, 255);
 }
 .filter-main .filter-container {
   display: flex;
@@ -500,4 +510,12 @@ body {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   margin-bottom: 2.5rem;
+}
+.section-photo-gallery h2 .style-italic {
+  font-style: italic;
+  font-family: "Taviraj", sans-serif;
+  font-weight: 300;
+  font-size: 4.125rem;
+  line-height: 4.5375rem;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=style.css.map */

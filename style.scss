@@ -120,6 +120,12 @@ body {
                 color: $primary-color;
                 text-transform: uppercase;
                 margin-top: 2rem;
+                max-width: 34.375rem;
+
+
+                .style-italic {
+                    @include italic-h2;
+                }
             }
         }
     }
@@ -228,5 +234,9 @@ body {
         color: $primary-color;
         text-transform: uppercase;
         margin-bottom: 2.5rem;
+
+        .style-italic {
+            @include italic-h2;
+        }
     }
 }
