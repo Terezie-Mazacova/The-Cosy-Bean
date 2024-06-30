@@ -74,5 +74,6 @@
     font-style: italic;
     font-family: 'Taviraj', sans-serif;
     font-weight: 300;
+    @include text-huge;
     color: $primary-color;
 }

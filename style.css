@@ -348,6 +348,14 @@ body {
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
+.story-section .story-container .story-info .story-content h2 .style-italic {
+  font-style: italic;
+  font-family: "Taviraj", sans-serif;
+  font-weight: 300;
+  font-size: 4.125rem;
+  line-height: 4.5375rem;
+  color: rgb(255, 255, 255);
+}
 .story-section .story-container .story-info .story-content p {
   font-size: 1.125rem;
   line-height: 1.625rem;
