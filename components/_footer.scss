@@ -2,59 +2,89 @@
     display: flex;
     flex-direction: column;
     background-color: $second-color-black;
+    position: relative;
+    overflow: hidden;
+
+    .footer-bg-img {
+        position: absolute;
+        background-image: url(./img/photo-footer.png);
+        object-fit: cover;
+        object-position: bottom;
+        width: 687px;
+        height: 687px;
+        border-radius: 999px;
+        top: 30%;
+        left: 36%;
+        z-index: 2;
+    }
 
     .footer-first-content {
         display: flex;
-        padding: 5.125rem 0 5.4375rem 0;
-        max-width: 90rem;
-        margin: 0 auto;
-
-        .footer-social-content {
-            display: flex;
-            flex-direction: column;
-
-            .footer-logo {
-                margin: 0 11.25rem 1.3125rem 0;
-
-                p {
-                    @include text-xxlarge;
-                    color: $primary-color;
-                    font-family: 'Taviraj';
-                    font-weight: 600;
-                }
-            }
-
-            .footer-other-logos {
-                display: flex;
-                gap: .5625rem;
-            }
-        }
+        justify-content: center;
+        padding-top: 6rem;
 
         .footer-info {
             display: flex;
-            gap: 4rem;
+            flex-direction: column;
+            align-items: center;
+            z-index: 5;
 
             .footer-info-details {
-                margin-right: 4rem;
-                h4 {
-                    @include h4;
-                    color: $primary-color;
-                    margin-bottom: .25rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .footer-visit {
+                    color: $dark-grey;
                     font-weight: 400;
+                    @include text-xsmall;
+                    text-transform: uppercase;
                 }
-                
-                p {
-                    @include text-medium;
+
+                h2 {
+                    @include h2;
+                    font-weight: 300;
+                    color: $primary-color;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin: 1.75rem 0 .75rem 0;
+
+                    .style-italic {
+                        @include italic-h2;
+                    }
+                }
+
+                .footer-opening-hours {
                     color: $primary-color;
                     font-weight: 300;
-                    white-space: nowrap;
+                    @include text-medium;
+                    opacity: 60%;
+                    margin-bottom: 1.9375rem;
                 }
             }
         }
+
+        .footer-btn button{
+            @include main-btn;
+            margin-bottom: 17.6875rem;
+        }
     }
+
+
+
+
+
+
+
+
+
+
+
 
     .footer-border-top {
         border-top: 1px solid $primary-color-opacity;
+        max-width: 90rem;
+        margin: 0 auto;
 
         .footer-second-content {
             display: flex;
