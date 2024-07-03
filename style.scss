@@ -14,7 +14,10 @@
 @import "components/slider";
 @import "pages/our-story";
 
-
+// === FOR SMOOTH SCROLL ==
+html {
+    scroll-behavior: smooth;
+}
 
 *, *::before, *::after {
     padding: 0;

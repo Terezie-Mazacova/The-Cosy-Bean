@@ -1,3 +1,4 @@
+// === SLIDERS ===
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide1 = new Splide( '.slider1', {
         perPage: 2,

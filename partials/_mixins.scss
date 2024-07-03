@@ -54,6 +54,7 @@
     border-radius: .5rem;
     border: .0625rem;
     background-color: $primary-color;
+    cursor: pointer;
     
     p {
         @include text-small;
