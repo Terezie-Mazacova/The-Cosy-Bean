@@ -100,7 +100,6 @@
                 </div>
 
                 <!--Popup-->
-
                 <div class="drink-popup">
                     <div class="drink-list">
                         <div class="drink-item" onclick="openPopup('popup1')">
@@ -203,11 +202,32 @@
                         </div>
                     </div>
             
+
                     <div class="popup" id="popup1">
-                        <img src="/img/Icon1.svg" alt="nozth" onclick="closePopup('popup1')">
-                        <h2>Popup 1 Title</h2>
-                        <p>Content for the first popup.</p>
-                        <button type="button" onclick="closePopup('popup1')">ok</button>
+                        <div class="popup-images">
+                            <div class="popup-close-icon">
+                                <img src="./img/close-popup.svg" alt="nozth" onclick="closePopup('popup1')">
+                            </div>
+                        </div>
+
+                        <div class="popup-drink">
+                            <img src="/img/coffee-menu/americano.jpg">
+                        </div>
+
+                        <div class="popup-content">
+                            <div class="popup-header">
+                                <h2 class="drink-title">americano</h2>
+                                <p class="drink-price">$10</p>
+                            </div>
+
+                            <div class="popup-body">
+                                <p>Promytá zrnková káva je naše první spolupráce s brněnským THE ROSSES, kteří dovážejí kávu z Ethiopie výborné kvality. Těšíme se na šálek s tóny zralých broskví, voňavého jasmínu a příjemnou limetkovou aciditou.</p>
+                                <p class="popup-alergens">Alergens</p>
+
+                                <button type="button">Order on Uber Eats</button>
+                            </div>
+                        </div>
+                        
                     </div>
             
                     <div class="popup" id="popup2">

@@ -491,15 +491,15 @@ body {
   border-right: 1px solid rgb(79, 25, 2);
   border-bottom: 1px solid rgb(79, 25, 2);
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
 }
 .drink-popup .drink-list .drink-item .drink-img {
   width: 100%;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
 }
 .drink-popup .drink-list .drink-item .drink-img img {
   width: 100%;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in;
 }
 .drink-popup .drink-list .drink-item .drink-info {
   display: flex;
@@ -524,7 +524,7 @@ body {
   color: rgb(212, 204, 201);
 }
 .drink-popup .drink-list .drink-item:hover .drink-img img {
-  transform: scaleX(1.1);
+  transform: scale(1.1);
 }
 .drink-popup .drink-list .drink-item:hover .drink-title {
   text-decoration: underline;
@@ -545,18 +545,16 @@ body {
 }
 
 .popup {
-  width: 400px;
-  height: 300px;
-  background: #fff;
+  width: 500px;
   border-radius: 10px;
   position: absolute;
   bottom: -100%;
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
-  padding: 40px;
   color: #333;
   visibility: hidden;
+  overflow: hidden;
   transition: transform 0.4s, bottom 0.4s, visibility 0.4s;
 }
 
@@ -574,25 +572,52 @@ body {
   transition: transform 0.8s, bottom 0.8s, visibility 0.8s;
 }
 
+/*
 .popup img {
-  width: 100px;
-  height: 100px;
-  margin-top: -50px;
-  border-radius: 30px;
-  cursor: pointer;
+    margin-top: -50px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+*/
+.popup-images {
+  position: relative;
+  width: 100%;
+}
+.popup-images .popup-close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.popup-content {
+  background-color: #333;
+  width: 100%;
+}
+
+.popup-drink {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.popup-drink img {
+  width: 100%;
+}
+
+.popup-content {
+  padding: 40px;
 }
 
 .popup button {
-  width: 100%;
-  margin-top: 20px;
-  padding: 20px;
-  background-color: green;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  border-radius: 4px;
+  background-color: rgb(115, 36, 2);
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  width: 100%;
 }
 
 .section-photo-gallery {
