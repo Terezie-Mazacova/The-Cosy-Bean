@@ -1,3 +1,16 @@
+// === FOR SMOOTH SCROLL ==
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
 // === SLIDERS ===
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide1 = new Splide( '.slider1', {
@@ -40,6 +53,28 @@ document.addEventListener( 'DOMContentLoaded', function() {
     });
     splide2.mount();
 } );
+
+// == POPUP ==
+function openPopup(popupId) {
+    closeAllPopups(); // Close all other popups before opening a new one
+    let popup = document.getElementById(popupId);
+    popup.classList.remove('close-popup');
+    popup.classList.add('open-popup');
+}
+
+function closePopup(popupId) {
+    let popup = document.getElementById(popupId);
+    popup.classList.remove('open-popup');
+    popup.classList.add('close-popup');
+}
+
+function closeAllPopups() {
+    let popups = document.querySelectorAll('.popup');
+    popups.forEach(popup => {
+        popup.classList.remove('open-popup');
+        popup.classList.add('close-popup');
+    });
+}
 
 
 

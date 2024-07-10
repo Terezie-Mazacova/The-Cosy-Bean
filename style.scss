@@ -14,10 +14,6 @@
 @import "components/slider";
 @import "pages/our-story";
 
-// === FOR SMOOTH SCROLL ==
-html {
-    scroll-behavior: smooth;
-}
 
 *, *::before, *::after {
     padding: 0;
@@ -101,22 +97,22 @@ body {
     }
 }
 
-// == Section Filter Menu ==
-.filter-main {
+// == Section popup ==
+.main-container {
     padding: 6rem 0;
     background-color: $special-section-bg;
 
-    .filter-info {
+    .menu-info {
         display: flex;
         flex-direction: column;
         max-width: 90rem;
         margin: 0 auto;
 
-        .filter-chapter {
+        .menu-chapter {
             @include chapter;
         }
 
-        .filter-heading {
+        .menu-heading {
             h2 {
                 @include h2;
                 font-weight: 300;
@@ -132,33 +128,9 @@ body {
             }
         }
     }
-
-    .filter-container {
-        display: flex;
-        max-width: 90rem;
-        margin: 2.5rem auto;
-        gap: 5rem;
-
-        .filter-nav {
-            ul {
-                display: flex;
-                flex-direction: column;
-                gap: .5rem;
-
-                li {
-                    list-style-type: none;
-                    @include text-large;
-                    color: $primary-color;
-                    font-weight: 300;
-                    text-transform: uppercase;
-                    opacity: 80%;
-                    padding: .5rem 0;
-                }
-            }
-        }
-    }
 }
 
+/*
 .filter-gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -171,8 +143,7 @@ body {
         justify-content: center;
 
         .filter-card-content {
-            padding: 1.5rem 1.5rem 3rem 1.5rem;
-            width: 100%;
+            
 
             &:nth-child(1),
             &:nth-child(2),
@@ -206,10 +177,92 @@ body {
         }
     }
 }
+*/
 
-// == FOR JS ==
-.hidden {
-    display: none;
+
+
+.container {
+
+}
+.fuck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+.filter-card-content {
+    display: flex;
+    flex-basis: calc(33.33% - 20px);
+    align-items: center;
+}
+
+.bg-relative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    padding: 40px;
+    background: #fff;
+    border: 0;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.popup {
+    width: 400px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -100%; /* Start completely off-screen */
+    left: 50%;
+    transform: translate(-50%, 0); /* Off-screen horizontally */
+    text-align: center;
+    padding: 40px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, bottom 0.4s, visibility 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    bottom: 50%; /* Move to the center of the container */
+    transform: translate(-50%, 50%); /* Center vertically */
+    transition: transform 0.4s, bottom 0.4s, visibility 0.4s; /* Faster transition */
+}
+
+.close-popup {
+    visibility: hidden;
+    bottom: -100%; /* Move back to the bottom of the container */
+    transform: translate(-50%, 0); /* Off-screen vertically */
+    transition: transform 0.8s, bottom 0.8s, visibility 0.8s; /* Slower transition */
+}
+
+.popup img {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 

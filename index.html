@@ -84,135 +84,161 @@
             </div>
         </section>
 
-        <!--Section Filter menu-->
-        <section class="section-filter" id="drinks">
-            <div class="filter-main">
-                <div class="filter-info">
-                    <div class="filter-chapter">
+        <!--Section popup-->
+        <section class="section-popup" id="drinks">
+            <div class="main-container">
+                <div class="menu-info">
+                    <div class="menu-chapter">
                         <p>03</p>
                         <img src="./shapes/Rectangle 4.svg" alt="Line" class="m-16">
                         <p>MENU</p>
                     </div>
 
-                    <div class="filter-heading">
+                    <div class="menu-heading">
                         <h2>Our menu <span class="style-italic">isn't just a list</span></h2>
                     </div>
                 </div>
 
-                <!--Filter-->
-                <div class="filter-container">
-                    <div class="filter-gallery-container">
-                        <div class="filter-card coffee">
-                            <div class="filter-wrapper">
-                                <div class="filter-card-content">
-                                    <img src="./img/coffee.jpg">
-                                    <div class="filter-card-title">
-                                        <p class="filter-title">americano</p>
-                                        <p class="filter-price">$10</p>
-                                    </div>
+                <!--Popup-->
+                <div class="container">
+                    <div class="bg-relative">
+                        <div class="fuck">
+                            <div class="filter-card-content" onclick="openPopup('popup1')">
+                                <img src="./img/coffee-menu/americano.jpg">
+                                <div class="filter-card-title">
+                                    <p class="filter-title">americano</p>
+                                    <p class="filter-price">$10</p>
                                 </div>
                             </div>
+            
+                            <div class="filter-card-content" onclick="openPopup('popup2')">
+                                <img src="./img/coffee-menu/pumpkin.jpg">
+                                <div class="filter-card-title">
+                                    <p class="filter-title">pumpkin chai</p>
+                                    <p class="filter-price">$10</p>
+                                </div>
+                            </div>
+            
+                            <div class="filter-card-content" onclick="openPopup('popup3')">
+                                <img src="./img/coffee-menu/lattte.jpg">
+                                <div class="filter-card-title">
+                                    <p class="filter-title">latte</p>
+                                    <p class="filter-price">$10</p>
+                                </div>
+                            </div>
+
+                            <div class="filter-card-content" onclick="openPopup('popup4')">
+                                <img src="./img/coffee-menu/caramel-high.jpg">
+                                <div class="filter-card-title">
+                                    <p class="filter-title">caramel high rise</p>
+                                    <p class="filter-price">$10</p>
+                                </div>
+                            </div>
+            
+                            <div class="filter-card-content" onclick="openPopup('popup5')">
+                                <img src="./img/coffee-menu/caramel-expresso.jpg">
+                                <div class="filter-card-title">
+                                    <p class="filter-title">caramel expresso</p>
+                                    <p class="filter-price">$10</p>
+                                </div>
+                            </div>
+            
+                            <div class="filter-card-content" onclick="openPopup('popup6')">
+                                <img src="./img/coffee-menu/iced-matcha.jpg">
+                                <div class="filter-card-title">
+                                    <p class="filter-title">iced matcha latte</p>
+                                    <p class="filter-price">$10</p>
+                                </div>
+                            </div>
+
+                            <div class="filter-card-content" onclick="openPopup('popup7')">
+                                <img src="./img/coffee-menu/peach-tea.jpg">
+                                <div class="filter-card-title">
+                                    <p class="filter-title">peach black tea</p>
+                                    <p class="filter-price">$10</p>
+                                </div>
+                            </div>
+            
+                            <div class="filter-card-content" onclick="openPopup('popup8')">
+                                <img src="./img/coffee-menu/green-tea.jpg">
+                                <div class="filter-card-title">
+                                    <p class="filter-title">green tea lemonade</p>
+                                    <p class="filter-price">$10</p>
+                                </div>
+                            </div>
+            
+                            <div class="filter-card-content" onclick="openPopup('popup9')">
+                                <img src="./img/coffee-menu/blackaberry-lemonade.jpg">
+                                <div class="filter-card-title">
+                                    <p class="filter-title">blackberry lemonade</p>
+                                    <p class="filter-price">$10</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="popup" id="popup1">
+                            <img src="/img/Icon1.svg" alt="nozth" onclick="closePopup('popup1')">
+                            <h2>Popup 1 Title</h2>
+                            <p>Content for the first popup.</p>
+                            <button type="button" onclick="closePopup('popup1')">ok</button>
+                        </div>
+                
+                        <div class="popup" id="popup2">
+                            <img src="/img/Icon2.svg" alt="nozth" onclick="closePopup('popup2')">
+                            <h2>Popup 2 Title</h2>
+                            <p>Content for the second popup.</p>
+                            <button type="button" onclick="closePopup('popup2')">ok</button>
+                        </div>
+                
+                        <div class="popup" id="popup3">
+                            <img src="/img/Icon3.svg" alt="nozth" onclick="closePopup('popup3')">
+                            <h2>Popup 3 Title</h2>
+                            <p>Content for the third popup.</p>
+                            <button type="button" onclick="closePopup('popup3')">ok</button>
                         </div>
 
-                        <div class="filter-card coffee">
-                            <div class="filter-wrapper">
-                                <div class="filter-card-content">
-                                    <img src="./img/coffee.jpg">
-                                    <div class="filter-card-title">
-                                        <p class="filter-title">americano</p>
-                                        <p class="filter-price">$10</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="popup" id="popup4">
+                            <img src="/img/Icon1.svg" alt="nozth" onclick="closePopup('popup4')">
+                            <h2>Popup 1 Title</h2>
+                            <p>Content for the first popup.</p>
+                            <button type="button" onclick="closePopup('popup4')">ok</button>
+                        </div>
+                
+                        <div class="popup" id="popup5">
+                            <img src="/img/Icon2.svg" alt="nozth" onclick="closePopup('popup5')">
+                            <h2>Popup 2 Title</h2>
+                            <p>Content for the second popup.</p>
+                            <button type="button" onclick="closePopup('popup5')">ok</button>
+                        </div>
+                
+                        <div class="popup" id="popup6">
+                            <img src="/img/Icon3.svg" alt="nozth" onclick="closePopup('popup6')">
+                            <h2>Popup 3 Title</h2>
+                            <p>Content for the third popup.</p>
+                            <button type="button" onclick="closePopup('popup6')">ok</button>
                         </div>
 
-                        <div class="filter-card coffee">
-                            <div class="filter-wrapper">
-                                <div class="filter-card-content">
-                                    <img src="./img/coffee.jpg">
-                                    <div class="filter-card-title">
-                                        <p class="filter-title">americano</p>
-                                        <p class="filter-price">$10</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="popup" id="popup7">
+                            <img src="/img/Icon1.svg" alt="nozth" onclick="closePopup('popup7')">
+                            <h2>Popup 1 Title</h2>
+                            <p>Content for the first popup.</p>
+                            <button type="button" onclick="closePopup('popup7')">ok</button>
                         </div>
-
-                        <div class="filter-card food">
-                            <div class="filter-wrapper">
-                                <div class="filter-card-content">
-                                    <img src="./img/coffee.jpg">
-                                    <div class="filter-card-title">
-                                        <p class="filter-title">americano</p>
-                                        <p class="filter-price">$10</p>
-                                    </div>
-                                </div>
-                            </div>
+                
+                        <div class="popup" id="popup8">
+                            <img src="/img/Icon2.svg" alt="nozth" onclick="closePopup('popup8')">
+                            <h2>Popup 2 Title</h2>
+                            <p>Content for the second popup.</p>
+                            <button type="button" onclick="closePopup('popup8')">ok</button>
                         </div>
-
-                        <div class="filter-card food">
-                            <div class="filter-wrapper">
-                                <div class="filter-card-content">
-                                    <img src="./img/coffee.jpg">
-                                    <div class="filter-card-title">
-                                        <p class="filter-title">americano</p>
-                                        <p class="filter-price">$10</p>
-                                    </div>
-                                </div>
-                            </div>
+                
+                        <div class="popup" id="popup9">
+                            <img src="/img/Icon3.svg" alt="nozth" onclick="closePopup('popup9')">
+                            <h2>Popup 3 Title</h2>
+                            <p>Content for the third popup.</p>
+                            <button type="button" onclick="closePopup('popup9')">ok</button>
                         </div>
-
-                        <div class="filter-card food">
-                            <div class="filter-wrapper">
-                                <div class="filter-card-content">
-                                    <img src="./img/coffee.jpg">
-                                    <div class="filter-card-title">
-                                        <p class="filter-title">americano</p>
-                                        <p class="filter-price">$10</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="filter-card food">
-                            <div class="filter-wrapper">
-                                <div class="filter-card-content">
-                                    <img src="./img/coffee.jpg">
-                                    <div class="filter-card-title">
-                                        <p class="filter-title">americano</p>
-                                        <p class="filter-price">$10</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="filter-card food">
-                            <div class="filter-wrapper">
-                                <div class="filter-card-content">
-                                    <img src="./img/coffee.jpg">
-                                    <div class="filter-card-title">
-                                        <p class="filter-title">americano</p>
-                                        <p class="filter-price">$10</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="filter-card food">
-                            <div class="filter-wrapper">
-                                <div class="filter-card-content">
-                                    <img src="./img/coffee.jpg">
-                                    <div class="filter-card-title">
-                                        <p class="filter-title">americano</p>
-                                        <p class="filter-price">$10</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        
                     </div>
-
                 </div>
 
                 <!--Slider1-->
