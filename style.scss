@@ -99,6 +99,9 @@ body {
 
 // == Section popup ==
 .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
     padding: 6rem 0;
     background-color: $special-section-bg;
 
@@ -107,6 +110,8 @@ body {
         flex-direction: column;
         max-width: 90rem;
         margin: 0 auto;
+        width: 100%;
+        padding-left: 1.5rem;
 
         .menu-chapter {
             @include chapter;
@@ -130,78 +135,80 @@ body {
     }
 }
 
-/*
-.filter-gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
 
-    .filter-wrapper {
+.drink-popup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 5rem;
+
+    .drink-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
+        max-width: 90rem;
+        margin: 0 auto;
 
-        .filter-card-content {
-            
+        .drink-item {
+            display: flex;
+            flex-direction: column;
+            flex-basis: calc(33.33% - 20px);
+            align-items: center;
+            gap: 1.5rem;
+            padding: 24px 24px 48px 24px;
+            border-right: 1px solid $border-color-dark-brown;
+            border-bottom: 1px solid $border-color-dark-brown;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
 
-            &:nth-child(1),
-            &:nth-child(2),
-            &:nth-child(3) {
-                display: inline-block;
+            .drink-img {
+                width: 100%;
+                
+                img {
+                    width: 100%;
+                    transition: transform 0.3s ease; 
+                }
             }
 
-            img {
-                width: 100%
-            }
-
-            .filter-card-title {
+            .drink-info {
                 display: flex;
                 flex-direction: column;
-                gap: 1rem;
-                margin-top: 1.5rem;
+                gap: .5rem;
+                width: 100%;
 
-                .filter-title {
+                .drink-title {
+                    color: $primary-color;
                     @include text-large;
                     font-weight: 300;
                     text-transform: uppercase;
-                    color: $primary-color;
+                    transition: text-decoration 0.3s ease; 
                 }
 
-                .filter-price {
+                .drink-price {
                     @include text-xsmall;
                     font-weight: 400;
                     color: $light-gray-brown;
                 }
             }
+
+            &:hover {
+                .drink-img img {
+                    transform: scaleX(1.1); 
+                }
+        
+                .drink-title {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .drink-item:nth-child(3n){
+            border-right: none;
         }
     }
 }
-*/
 
-
-
-.container {
-
-}
-.fuck {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    max-width: 90rem;
-    margin: 0 auto;
-}
-.filter-card-content {
-    display: flex;
-    flex-basis: calc(33.33% - 20px);
-    align-items: center;
-}
-
-.bg-relative {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
 .btn {
     padding: 40px;
@@ -215,14 +222,14 @@ body {
 }
 
 .popup {
-    width: 400px; /* Fixed width */
-    height: 300px; /* Fixed height */
+    width: 400px;
+    height: 300px;
     background: #fff;
     border-radius: 10px;
     position: absolute;
-    bottom: -100%; /* Start completely off-screen */
+    bottom: -100%;
     left: 50%;
-    transform: translate(-50%, 0); /* Off-screen horizontally */
+    transform: translate(-50%, 0);
     text-align: center;
     padding: 40px;
     color: #333;
@@ -232,16 +239,16 @@ body {
 
 .open-popup {
     visibility: visible;
-    bottom: 50%; /* Move to the center of the container */
-    transform: translate(-50%, 50%); /* Center vertically */
-    transition: transform 0.4s, bottom 0.4s, visibility 0.4s; /* Faster transition */
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    transition: transform 0.4s, bottom 0.4s, visibility 0.4s;
 }
 
 .close-popup {
     visibility: hidden;
-    bottom: -100%; /* Move back to the bottom of the container */
-    transform: translate(-50%, 0); /* Off-screen vertically */
-    transition: transform 0.8s, bottom 0.8s, visibility 0.8s; /* Slower transition */
+    bottom: -100%;
+    transform: translate(-50%, 0);
+    transition: transform 0.8s, bottom 0.8s, visibility 0.8s;
 }
 
 .popup img {

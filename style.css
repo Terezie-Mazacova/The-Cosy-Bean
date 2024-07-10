@@ -426,6 +426,9 @@ body {
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
   padding: 6rem 0;
   background-color: rgb(115, 36, 2);
 }
@@ -434,6 +437,8 @@ body {
   flex-direction: column;
   max-width: 90rem;
   margin: 0 auto;
+  width: 100%;
+  padding-left: 1.5rem;
 }
 .main-container .menu-info .menu-chapter {
   display: flex;
@@ -463,72 +468,69 @@ body {
   color: rgb(255, 255, 255);
 }
 
-/*
-.filter-gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-
-    .filter-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-
-        .filter-card-content {
-
-
-            &:nth-child(1),
-            &:nth-child(2),
-            &:nth-child(3) {
-                display: inline-block;
-            }
-
-            img {
-                width: 100%
-            }
-
-            .filter-card-title {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                margin-top: 1.5rem;
-
-                .filter-title {
-                    @include text-large;
-                    font-weight: 300;
-                    text-transform: uppercase;
-                    color: $primary-color;
-                }
-
-                .filter-price {
-                    @include text-xsmall;
-                    font-weight: 400;
-                    color: $light-gray-brown;
-                }
-            }
-        }
-    }
-}
-*/
-.fuck {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  max-width: 90rem;
-  margin: 0 auto;
-}
-
-.filter-card-content {
-  display: flex;
-  flex-basis: calc(33.33% - 20px);
-  align-items: center;
-}
-
-.bg-relative {
+.drink-popup {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  gap: 5rem;
+}
+.drink-popup .drink-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.drink-popup .drink-list .drink-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(33.33% - 20px);
+  align-items: center;
+  gap: 1.5rem;
+  padding: 24px 24px 48px 24px;
+  border-right: 1px solid rgb(79, 25, 2);
+  border-bottom: 1px solid rgb(79, 25, 2);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.drink-popup .drink-list .drink-item .drink-img {
+  width: 100%;
+}
+.drink-popup .drink-list .drink-item .drink-img img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.drink-popup .drink-list .drink-item .drink-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+.drink-popup .drink-list .drink-item .drink-info .drink-title {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  transition: -webkit-text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+}
+.drink-popup .drink-list .drink-item .drink-info .drink-price {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(212, 204, 201);
+}
+.drink-popup .drink-list .drink-item:hover .drink-img img {
+  transform: scaleX(1.1);
+}
+.drink-popup .drink-list .drink-item:hover .drink-title {
+  text-decoration: underline;
+}
+.drink-popup .drink-list .drink-item:nth-child(3n) {
+  border-right: none;
 }
 
 .btn {
@@ -543,14 +545,14 @@ body {
 }
 
 .popup {
-  width: 400px; /* Fixed width */
-  height: 300px; /* Fixed height */
+  width: 400px;
+  height: 300px;
   background: #fff;
   border-radius: 10px;
   position: absolute;
-  bottom: -100%; /* Start completely off-screen */
+  bottom: -100%;
   left: 50%;
-  transform: translate(-50%, 0); /* Off-screen horizontally */
+  transform: translate(-50%, 0);
   text-align: center;
   padding: 40px;
   color: #333;
@@ -560,16 +562,16 @@ body {
 
 .open-popup {
   visibility: visible;
-  bottom: 50%; /* Move to the center of the container */
-  transform: translate(-50%, 50%); /* Center vertically */
-  transition: transform 0.4s, bottom 0.4s, visibility 0.4s; /* Faster transition */
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  transition: transform 0.4s, bottom 0.4s, visibility 0.4s;
 }
 
 .close-popup {
   visibility: hidden;
-  bottom: -100%; /* Move back to the bottom of the container */
-  transform: translate(-50%, 0); /* Off-screen vertically */
-  transition: transform 0.8s, bottom 0.8s, visibility 0.8s; /* Slower transition */
+  bottom: -100%;
+  transform: translate(-50%, 0);
+  transition: transform 0.8s, bottom 0.8s, visibility 0.8s;
 }
 
 .popup img {
