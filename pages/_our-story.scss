@@ -1,9 +1,16 @@
+.story-container-page2 {
+    display: flex;
+    flex-direction: column;
 
-.story-begin {
-    width: 100% !important;
+    .story-info-page2 {
+        width: 100% !important;
+        align-items: center;
+        text-align: center;
 
-    h2 {
-        text-transform: lowercase !important;
+        .story-content-page2 {
+            max-width: unset !important;
+            
+        }
     }
 }
 

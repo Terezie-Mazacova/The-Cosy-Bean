@@ -272,11 +272,17 @@
   overflow: hidden;
 }
 
-.story-begin {
-  width: 100% !important;
+.story-container-page2 {
+  display: flex;
+  flex-direction: column;
 }
-.story-begin h2 {
-  text-transform: lowercase !important;
+.story-container-page2 .story-info-page2 {
+  width: 100% !important;
+  align-items: center;
+  text-align: center;
+}
+.story-container-page2 .story-info-page2 .story-content-page2 {
+  max-width: unset !important;
 }
 
 .incrementing-counter {
