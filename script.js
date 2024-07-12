@@ -56,16 +56,18 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
 // == POPUP ==
 function openPopup(popupId) {
-    closeAllPopups(); // Close all other popups before opening a new one
+    closeAllPopups();
     let popup = document.getElementById(popupId);
     popup.classList.remove('close-popup');
     popup.classList.add('open-popup');
+
 }
 
 function closePopup(popupId) {
     let popup = document.getElementById(popupId);
     popup.classList.remove('open-popup');
     popup.classList.add('close-popup');
+
 }
 
 function closeAllPopups() {

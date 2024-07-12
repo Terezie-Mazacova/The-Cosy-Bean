@@ -133,177 +133,192 @@ body {
             }
         }
     }
-}
 
-
-.drink-popup {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 5rem;
-
-    .drink-list {
+    // === POPUP ==
+    .drink-popup {
+        position: relative;
+        width: 100%;
+        height: 100%;
         display: flex;
-        flex-wrap: wrap;
-        max-width: 90rem;
-        margin: 0 auto;
-
-        .drink-item {
+        gap: 5rem;
+    
+        .drink-list {
             display: flex;
-            flex-direction: column;
-            flex-basis: calc(33.33% - 20px);
-            align-items: center;
-            gap: 1.5rem;
-            padding: 24px 24px 48px 24px;
-            border-right: 1px solid $border-color-dark-brown;
-            border-bottom: 1px solid $border-color-dark-brown;
-            cursor: pointer;
-
-            .drink-img {
-                width: 100%;
-                overflow: hidden;
-                background-color: $primary-color;
-                
-                img {
+            flex-wrap: wrap;
+            max-width: 90rem;
+            margin: 0 auto;
+    
+            .drink-item {
+                display: flex;
+                flex-direction: column;
+                flex-basis: calc(33.33% - 20px);
+                align-items: center;
+                gap: 1.5rem;
+                padding: 24px 24px 48px 24px;
+                border-right: 1px solid $border-color-dark-brown;
+                border-bottom: 1px solid $border-color-dark-brown;
+                cursor: pointer;
+    
+                .drink-img {
                     width: 100%;
-                    transition: transform 0.3s ease-in; 
+                    overflow: hidden;
+                    background-color: $primary-color;
+                    
+                    img {
+                        width: 100%;
+                        transition: transform 0.3s ease-in; 
+                    }
+                }
+    
+                .drink-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    width: 100%;
+    
+                    .drink-title {
+                        color: $primary-color;
+                        @include text-large;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        transition: text-decoration 0.3s ease; 
+                    }
+    
+                    .drink-price {
+                        @include text-xsmall;
+                        font-weight: 400;
+                        color: $light-gray-brown;
+                    }
+                }
+    
+                &:hover {
+                    .drink-img img {
+                        transform: scale(1.1); 
+                    }
+            
+                    .drink-title {
+                        text-decoration: underline;
+                    }
                 }
             }
+    
+            .drink-item:nth-child(3n){
+                border-right: none;
+            }
+        }
+    }
 
-            .drink-info {
+    .popup {
+        width: 500px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        color: #333;
+        visibility: hidden;
+        overflow: hidden;
+        transition: transform 0.4s, bottom 0.4s, visibility 0.4s;
+    
+        .popup-images {
+            position: relative;
+            width: 100%;
+        
+            .popup-close-icon {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                cursor: pointer;
+            }
+        }
+    
+        .popup-drink {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+        
+            img {
+                width: 100%;
+            }
+        }
+    
+        .popup-content {
+            background-color: #333;
+            width: 100%;
+            padding: 1rem;
+        
+            .popup-header {
                 display: flex;
                 flex-direction: column;
                 gap: .5rem;
-                width: 100%;
-
-                .drink-title {
-                    color: $primary-color;
-                    @include text-large;
-                    font-weight: 300;
-                    text-transform: uppercase;
-                    transition: text-decoration 0.3s ease; 
-                }
-
-                .drink-price {
-                    @include text-xsmall;
-                    font-weight: 400;
-                    color: $light-gray-brown;
-                }
-            }
-
-            &:hover {
-                .drink-img img {
-                    transform: scale(1.1); 
-                }
+                text-align: left;
         
                 .drink-title {
-                    text-decoration: underline;
+                    @include text-medium-large;
+                    color: $primary-color;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                }
+        
+                .drink-price {
+                    @include text-small;
+                    color: $light-gray-brown;
+                    font-weight: 400;
+                }
+            }
+        
+            .popup-body {
+                text-align: left;
+        
+                p {
+                    @include text-small;
+                    font-weight: 400;
+                    color: $primary-color;
+                    opacity: 70%;
+                    margin-top: 1rem;
+                }
+        
+                .popup-alergens {
+                    font-weight: 600;
+                    color: $light-gray-brown;
+                    margin-top: 1.5rem;
+                    margin-bottom: 9.4375rem;
+                }
+        
+                button {
+                    background-color: $btn-dark-brown;
+                    color: $primary-color;
+                    border-radius: .5rem;
+                    cursor: pointer;
+                    font-weight: 600;
+                    @include text-small;
+                    border: none;
+                    padding: .75rem 1.5rem;
+                    width: 100%;
                 }
             }
         }
-
-        .drink-item:nth-child(3n){
-            border-right: none;
-        }
+    }
+    
+    .open-popup {
+        visibility: visible;
+        bottom: 50%;
+        transform: translate(-50%, 50%);
+        transition: transform 0.4s, bottom 0.4s, visibility 0.4s;
+    }
+    
+    .close-popup {
+        visibility: hidden;
+        bottom: -100%;
+        transform: translate(-50%, 0);
+        transition: transform 0.8s, bottom 0.8s, visibility 0.8s;
     }
 }
 
-
-.btn {
-    padding: 40px;
-    background: #fff;
-    border: 0;
-    font-size: 22px;
-    font-weight: 600;
-    border-radius: 20px;
-    text-transform: uppercase;
-    margin: 10px;
-}
-
-.popup {
-    width: 500px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: -100%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-    color: #333;
-    visibility: hidden;
+.no-scroll {
     overflow: hidden;
-    transition: transform 0.4s, bottom 0.4s, visibility 0.4s;
 }
-
-.open-popup {
-    visibility: visible;
-    bottom: 50%;
-    transform: translate(-50%, 50%);
-    transition: transform 0.4s, bottom 0.4s, visibility 0.4s;
-}
-
-.close-popup {
-    visibility: hidden;
-    bottom: -100%;
-    transform: translate(-50%, 0);
-    transition: transform 0.8s, bottom 0.8s, visibility 0.8s;
-}
-
-/*
-.popup img {
-    margin-top: -50px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-*/
-
-.popup-images {
-    position: relative;
-    width: 100%;
-
-    .popup-close-icon {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-    }
-}
-
-.popup-content {
-    background-color: #333;
-    width: 100%;
-}
-
-.popup-drink {
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-
-    img {
-        width: 100%;
-    }
-}
-
-.popup-content {
-    padding: 40px;
-}
-
-
-
-
-
-.popup button {
-    background-color: $btn-dark-brown;
-    color: $primary-color;
-    border-radius: .5rem;
-    cursor: pointer;
-    font-weight: 500;
-    @include text-small;
-    border: none;
-    padding: .75rem 1.5rem;
-    width: 100%;
-}
-
-
 
 // == Photo Gallery Section ==
 .section-photo-gallery {
