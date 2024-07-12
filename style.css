@@ -91,19 +91,26 @@
   position: relative;
   overflow: hidden;
 }
-.section-footer .footer-bg-img {
+.section-footer .bg-footer img {
   position: absolute;
-  background-image: url(./img/photo-footer.png);
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
+  top: 30%;
+  left: 36%;
   width: 687px;
   height: 687px;
   border-radius: 999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-footer .bg-footer .darken-img {
+  position: absolute;
   top: 30%;
   left: 36%;
-  z-index: 2;
+  width: 687px;
+  height: 687px;
+  border-radius: 999px;
+  background-color: rgb(19, 19, 19);
+  opacity: 80%;
+  z-index: 1;
 }
 .section-footer .footer-first-content {
   display: flex;

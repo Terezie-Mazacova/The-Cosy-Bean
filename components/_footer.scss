@@ -5,17 +5,28 @@
     position: relative;
     overflow: hidden;
 
-    .footer-bg-img {
-        position: absolute;
-        background-image: url(./img/photo-footer.png);
-        object-fit: cover;
-        object-position: bottom;
-        width: 687px;
-        height: 687px;
-        border-radius: 999px;
-        top: 30%;
-        left: 36%;
-        z-index: 2;
+    .bg-footer {
+        img {
+            position: absolute;
+            top: 30%;
+            left: 36%;
+            width: 687px;
+            height: 687px;
+            border-radius: 999px;
+            object-fit: cover;
+        }
+
+        .darken-img {
+            position: absolute;
+            top: 30%;
+            left: 36%;
+            width: 687px;
+            height: 687px;
+            border-radius: 999px;
+            background-color: $second-color;
+            opacity: 80%;
+            z-index: 1;
+        }
     }
 
     .footer-first-content {
@@ -69,17 +80,6 @@
             margin-bottom: 17.6875rem;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
 
     .footer-border-top {
         border-top: 1px solid $primary-color-opacity;
