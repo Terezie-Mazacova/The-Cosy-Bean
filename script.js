@@ -10,6 +10,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+// == CODE FOR SMOOTH SCROLL FROM OUR STORY PAGE TO HOME PAGE
+function goToDrinks() {
+    window.location.href = 'index.html#drinks';
+}
+
+window.onload = function() {
+    if (window.location.hash === '#drinks') {
+        document.querySelector('#drinks').scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
+
 
 // === SLIDERS ===
 document.addEventListener( 'DOMContentLoaded', function() {
@@ -102,3 +114,5 @@ counters.forEach(counter => {
 
     updateCounter()
 })
+
+

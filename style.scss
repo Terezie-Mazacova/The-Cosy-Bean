@@ -24,6 +24,10 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 .m-w-unset {
     max-width: unset !important;
 }

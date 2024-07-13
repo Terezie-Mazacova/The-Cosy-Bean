@@ -275,6 +275,7 @@
 .story-container-page2 {
   display: flex;
   flex-direction: column;
+  gap: 4rem;
 }
 .story-container-page2 .story-info-page2 {
   width: 100% !important;
@@ -282,7 +283,19 @@
   text-align: center;
 }
 .story-container-page2 .story-info-page2 .story-content-page2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: unset !important;
+}
+.story-container-page2 .story-info-page2 .story-content-page2 h2 {
+  max-width: 54.625rem !important;
+}
+.story-container-page2 .story-info-page2 .story-content-page2 p {
+  max-width: 37rem !important;
+}
+.story-container-page2 .story-section-img-page2 {
+  width: 100% !important;
 }
 
 .incrementing-counter {
@@ -346,6 +359,10 @@
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .m-w-unset {

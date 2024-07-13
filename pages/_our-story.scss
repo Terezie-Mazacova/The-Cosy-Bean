@@ -1,6 +1,7 @@
 .story-container-page2 {
     display: flex;
     flex-direction: column;
+    gap: 4rem;
 
     .story-info-page2 {
         width: 100% !important;
@@ -8,9 +9,23 @@
         text-align: center;
 
         .story-content-page2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             max-width: unset !important;
+
+            h2 {
+                max-width: 54.625rem !important;
+            }
             
+            p {
+                max-width: 37rem !important;
+            }
         }
+    }
+
+    .story-section-img-page2 {
+        width: 100% !important;
     }
 }
 
