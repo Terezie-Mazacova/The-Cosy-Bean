@@ -298,6 +298,53 @@
   width: 100% !important;
 }
 
+.section-passionate-team {
+  background-color: rgb(108, 34, 2);
+  padding: 6rem 0;
+}
+.section-passionate-team .subsection-team-story {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.section-passionate-team .subsection-team-story .story-chapter {
+  display: flex;
+}
+.section-passionate-team .subsection-team-story .story-chapter p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  opacity: 50%;
+}
+.section-passionate-team .team-story-detail {
+  max-width: 39.0625rem;
+}
+.section-passionate-team .team-story-detail .style-italic {
+  font-style: italic;
+  font-family: "Taviraj", sans-serif;
+  font-weight: 300;
+  font-size: 4.125rem;
+  line-height: 4.5375rem;
+  color: rgb(255, 255, 255);
+}
+.section-passionate-team .team-story-detail h2 {
+  font-size: 4rem;
+  line-height: 4.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+.section-passionate-team .team-story-detail p {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: rgb(255, 255, 255);
+  opacity: 70%;
+  margin-top: 1rem;
+}
+
 .incrementing-counter {
   padding: 6rem 0;
   background-color: rgb(19, 19, 19);

@@ -1,3 +1,4 @@
+// == INTRODUCTORY SECTION ABOUT OUR STORY ==
 .story-container-page2 {
     display: flex;
     flex-direction: column;
@@ -28,6 +29,49 @@
         width: 100% !important;
     }
 }
+
+
+// == SECTION ABOUT TEAM ==
+.section-passionate-team {
+    background-color: $coffee-brown-color;
+    padding: 6rem 0;
+
+    .subsection-team-story {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 90rem;
+        margin: 0 auto;
+
+        .story-chapter {
+            @include chapter;
+        }
+    }
+
+    .team-story-detail {
+        max-width: 39.0625rem;
+        .style-italic {
+            @include italic-h2;
+        }
+
+        h2 {
+            @include h2;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $primary-color;
+        }
+
+        p {
+            @include text-medium;
+            color: $primary-color;
+            opacity: 70%;
+            margin-top: 1rem;
+        }
+    }
+}
+
+
+
 
 // == INCREMENTING COUNTER ==
 .incrementing-counter {
