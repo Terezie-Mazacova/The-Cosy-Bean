@@ -120,26 +120,43 @@ function closeAllPopups() {
 
 
 // == INCREMENTING COUNTER ==
-const counters = document.querySelectorAll('.counter')
+document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counter');
 
-counters.forEach(counter => {
-    counter.innerText = '0'
+    const updateCounter = (counter) => {
+        const target = +counter.getAttribute('data-target');
+        const c = +counter.innerText;
 
-    const updateCounter = () => {
-        const target = +counter.getAttribute('data-target')
-        const c = +counter.innerText
+        const increment = target / 200;
 
-        const increment = target / 200
-
-        if(c < target) {
-            counter.innerText = `${Math.ceil(c + increment)}`
-            setTimeout(updateCounter, 1)
+        if (c < target) {
+            counter.innerText = `${Math.ceil(c + increment)}`;
+            setTimeout(() => updateCounter(counter), 1);
         } else {
-            counter.innerText = target
+            counter.innerText = target;
         }
-    }
+    };
 
-    updateCounter()
-})
+    const startCounting = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                updateCounter(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const options = {
+        root: null,
+        threshold: 0.1 
+    };
+
+    const observer = new IntersectionObserver(startCounting, options);
+
+    counters.forEach(counter => {
+        counter.innerText = '0';
+        observer.observe(counter);
+    });
+});
 
 
