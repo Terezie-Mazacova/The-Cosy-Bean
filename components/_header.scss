@@ -1,89 +1,117 @@
 .section-header {
     display: flex;
+    position: relative;
+    padding: 6rem 0;
 
     .header-bg {
-        background-image: url(./img/image\ 2.jpg);
-        width: 100%;
-        height: 100%;
-        
-        .header-content {
+        .darken-img-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $second-color;
+            opacity: 70%;
+            z-index: 1;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        max-width: 90rem;
+        margin: 0 auto;
+        z-index: 2;
+
+        .header-menu {
             display: flex;
-            flex-direction: column;
-            gap: 4rem;
+            justify-content: space-between;
+            padding: 2rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
             max-width: 90rem;
             margin: 0 auto;
+            z-index: 10;
 
-            .header-menu {
-                display: flex;
-                justify-content: space-between;
-                padding: 2rem 0;
-    
-                .header-nav {
-                    ul {
-                        display: flex;
-                        gap: 2rem;
-                        li {
-                            list-style-type: none;
-                            a {
-                                text-decoration: none;
-                                color: rgba(255, 255, 255, 1);
-                                @include text-xsmall;
-                                font-weight: 400;
+            .header-nav {
+                ul {
+                    display: flex;
+                    gap: 2rem;
+                    li {
+                        list-style-type: none;
+                        a {
+                            text-decoration: none;
+                            color: rgba(255, 255, 255, 1);
+                            @include text-xsmall;
+                            font-weight: 400;
 
-                                &:focus,
-                                &:active,
-                                &:hover {
-                                    text-decoration: underline;
-                                }
+                            &:focus,
+                            &:active,
+                            &:hover {
+                                text-decoration: underline;
                             }
                         }
                     }
                 }
-
-                .header-logo {
-                    a {
-                        font-family: 'Taviraj', sans-serif;
-                        @include text-large;
-                        text-decoration: none;
-                        color: rgba(255, 255, 255, 1);
-                        font-weight: 600;
-                    }
-                }
-
-                .header-social-icons {
-                    display: flex;
-                    gap: .75rem;
-                }
-
             }
-    
-            .section-hero {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 15.125rem 0 22.125rem 0;
-    
-                .hero-content {
-                    h1 {
-                        @include h1;
-                        color: $primary-color;
-                        font-weight: 300;
-                        text-align: center;
-                        max-width: 62.125rem;
 
-                        .italic-text {
-                            font-style: italic;
-                            font-family: 'Taviraj', sans-serif;
-                        }
+            .header-logo {
+                a {
+                    font-family: 'Taviraj', sans-serif;
+                    @include text-large;
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, 1);
+                    font-weight: 600;
+                }
+            }
+
+            .header-social-icons {
+                display: flex;
+                gap: .75rem;
+            }
+
+        }
+
+        .section-hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15.125rem 0 22.125rem 0;
+
+            .hero-content {
+                h1 {
+                    @include h1;
+                    color: $primary-color;
+                    font-weight: 300;
+                    text-align: center;
+                    max-width: 62.125rem;
+
+                    .italic-text {
+                        font-style: italic;
+                        font-family: 'Taviraj', sans-serif;
                     }
                 }
+            }
 
-                .header-main-btn button {
-                    @include main-btn;
-                    margin-top: 4rem;
-                }
+            .header-main-btn button {
+                @include main-btn;
+                margin-top: 4rem;
             }
         }
     }
+    
 }
