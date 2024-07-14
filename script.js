@@ -64,6 +64,33 @@ document.addEventListener( 'DOMContentLoaded', function() {
         }
     });
     splide2.mount();
+
+    var splide3 = new Splide( '.slider3', {
+        perPage: 4,
+        gap: '20px',
+        pagination: false,
+        type: 'loop',
+        autoplay: true,
+        interval: 1000,
+        speed: 900000,
+        autoWidth: true,
+        arrows: false,
+        breakpoints: {
+            1200: {
+                perPage: 3,
+                gap: '15px',
+            },
+            992: {
+                perPage: 2,
+                gap: '10px',
+            },
+            768: {
+                perPage: 1,
+                gap: '5px',
+            }
+        }
+    });
+    splide3.mount();
 } );
 
 // == POPUP ==

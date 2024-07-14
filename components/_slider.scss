@@ -59,3 +59,28 @@
 }
 
 
+// == SLIDER3
+.slider3 {
+    visibility: visible !important;
+}
+
+.splide3 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    
+}
+.splide3:nth-child(even) {
+    height: 324px;
+    width: 324px;
+    overflow: hidden;
+}
+
+.splide3:nth-child(odd) {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+
