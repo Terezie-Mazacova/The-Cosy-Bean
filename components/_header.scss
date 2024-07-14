@@ -2,6 +2,7 @@
     display: flex;
     position: relative;
     padding: 6rem 0;
+    height: 857px;
 
     .header-bg {
         .darken-img-header {
@@ -11,7 +12,7 @@
             width: 100%;
             height: 100%;
             background-color: $second-color;
-            opacity: 70%;
+            opacity: 90%;
             z-index: 1;
         }
 
@@ -25,9 +26,34 @@
         }
     }
 
+    // == FOR PAGE2 - HEADER BG
+    .header-bg-page2 {
+        .darken-img-header-page2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $second-color;
+            opacity: 90%;
+            z-index: 1;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
     .header-content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 4rem;
         max-width: 90rem;
         margin: 0 auto;
@@ -90,7 +116,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 15.125rem 0 22.125rem 0;
 
             .hero-content {
                 h1 {
@@ -99,6 +124,7 @@
                     font-weight: 300;
                     text-align: center;
                     max-width: 62.125rem;
+                    text-transform: uppercase;
 
                     .italic-text {
                         font-style: italic;
