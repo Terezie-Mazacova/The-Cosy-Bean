@@ -71,6 +71,44 @@
     }
 }
 
+// == SECTION TIMELINE ==
+.section-time-line {
+    background-color: grey; // == TEMPORARY ==
+    padding: 6rem 0;
+
+    .subsection-memory-lane {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 90rem;
+        margin: 0 auto;
+
+        .story-chapter {
+            @include chapter;
+        }
+
+        .memory-lane-header {
+            h2 {
+                @include h2;
+                font-weight: 300;
+                color: $primary-color;
+                text-transform: uppercase;
+                max-width: 50.5625rem;
+
+                .style-italic {
+                    @include italic-h2;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
 
 
 

@@ -419,6 +419,45 @@
   margin-top: 1rem;
 }
 
+.section-time-line {
+  background-color: grey;
+  padding: 6rem 0;
+}
+.section-time-line .subsection-memory-lane {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.section-time-line .subsection-memory-lane .story-chapter {
+  display: flex;
+}
+.section-time-line .subsection-memory-lane .story-chapter p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  opacity: 50%;
+  text-transform: uppercase;
+}
+.section-time-line .subsection-memory-lane .memory-lane-header h2 {
+  font-size: 4rem;
+  line-height: 4.4rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  max-width: 50.5625rem;
+}
+.section-time-line .subsection-memory-lane .memory-lane-header h2 .style-italic {
+  font-style: italic;
+  font-family: "Taviraj", sans-serif;
+  font-weight: 300;
+  font-size: 4.125rem;
+  line-height: 4.5375rem;
+  color: rgb(255, 255, 255);
+}
+
 .incrementing-counter {
   padding: 6rem 0;
   background-color: rgb(19, 19, 19);
