@@ -73,7 +73,7 @@
 
 // == SECTION TIMELINE ==
 .section-time-line {
-    background-color: grey; // == TEMPORARY ==
+    background-color: $second-color;
     padding: 6rem 0;
 
     .subsection-memory-lane {
@@ -105,12 +105,12 @@
 
 .timeline {
     position: relative;
-    max-width: 1200px;
-    margin: 100px auto;
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
 .container {
-    padding: 10px 50px;
+    padding: 80px 50px;
     position: relative;
     width: 50%;
     animation: movedown 1s linear forwards;
@@ -173,30 +173,34 @@
 .bi-dot {
     position: absolute;
     width: 40px;
-    right: -14px;
-    top: 32px;
+    left: -3.7%;
+    top: 50px;
     font-size: 50px;
     color: #fff;
     z-index: 5;
 }
 
-.container img {
+.right-text-small {
     position: absolute;
-    width: 40px;
-    right: -20px;
-    top: 32px;
+    left: -15%;
+    top: 20%;
     z-index: 5;
-}
-
-.left {
-    position: absolute;
-    right: -60px;
-    top: 40px;
-    z-index: 5;
+    color: $primary-color;
+    opacity: 50%;
+    font-family: 'Taviraj', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    @include text-xxlarge;
 }
 
 .right-dot {
     left: -26px;
+}
+
+.left-text-small {
+    position: absolute;
+    left: -18%;
+    top: 20%;
 }
 
 .timeline::after {
@@ -204,12 +208,12 @@
     position: absolute;
     width: 6px;
     height: 100%;
-    border-left: 2px dashed black;
+    border-left: 2px dashed $primary-color;
     top: 0;
     left: 50%;
     margin-left: -3px;
     opacity: 50%;
-    z-index: -1;
+    z-index: 0;
     animation: moveline 6s linear forwards;
 }
 
