@@ -118,6 +118,30 @@ function closeAllPopups() {
 }
 
 
+// == TIMELINE ==
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('.container');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('animate');
+                }, entry.target.dataset.delay || 0);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    elements.forEach((element, index) => {
+        element.dataset.delay = index * 20000;
+        observer.observe(element);
+    });
+});
+
+
 
 // == INCREMENTING COUNTER ==
 document.addEventListener('DOMContentLoaded', () => {
@@ -158,5 +182,13 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(counter);
     });
 });
+
+
+
+
+
+
+
+
 
 
