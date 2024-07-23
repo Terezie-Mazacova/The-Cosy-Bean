@@ -475,7 +475,7 @@
   margin-left: -3px;
   opacity: 50%;
   z-index: 0;
-  animation: moveline 30s linear forwards;
+  animation: moveline 20s linear forwards;
 }
 @keyframes moveline {
   0% {
@@ -507,16 +507,16 @@
   animation-delay: 0s;
 }
 .section-time-line .timeline .container:nth-child(2) {
-  animation-delay: 7s;
+  animation-delay: 4.6s;
 }
 .section-time-line .timeline .container:nth-child(3) {
-  animation-delay: 13s;
+  animation-delay: 8.4s;
 }
 .section-time-line .timeline .container:nth-child(4) {
-  animation-delay: 19s;
+  animation-delay: 12.4s;
 }
 .section-time-line .timeline .container:nth-child(5) {
-  animation-delay: 25s;
+  animation-delay: 16.4s;
 }
 .section-time-line .timeline .container .first-bi-dot {
   position: absolute;

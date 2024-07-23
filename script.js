@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     elements.forEach((element, index) => {
-        element.dataset.delay = index * 20000;
+        element.dataset.delay = index * 80000; // == WITHOUT THREE NULL ==
         observer.observe(element);
     });
 });
