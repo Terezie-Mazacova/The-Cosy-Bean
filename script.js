@@ -184,11 +184,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// == HAMBURGER MENU ==
+const hamburger = document.querySelector('.hamburger');
 
+hamburger.addEventListener('click', function() {
+    this.classList.toggle('is-active');
+    const mobileNav = document.querySelector('.mobile-nav');
+    mobileNav.classList.toggle('is-active');
 
-
-
-
+    if (this.classList.contains('is-active')) {
+        this.style.position = 'fixed';
+        this.style.top = '30px';
+        this.style.right = '27px';
+    } else {
+        this.style.position = 'initial';
+        this.style.top = '80px';
+        this.style.right = 'auto';
+    }
+});
 
 
 
