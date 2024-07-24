@@ -8,6 +8,7 @@
         width: 100% !important;
         align-items: center;
         text-align: center;
+        padding: unset !important;
 
         .story-content-page2 {
             display: flex;
@@ -338,7 +339,7 @@
     
                 .counter {
                     font-family: 'Taviraj', sans-serif;
-                    @include h1;
+                    @include h3;
                     font-weight: 300;
                     color: $primary-color;
                 }
@@ -353,6 +354,10 @@
         }
     }
 }
+
+
+
+// == BREAKPOINTS ==
 
 @media (max-width: 580px) {
     .social-counter-container {

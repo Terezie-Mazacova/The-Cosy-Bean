@@ -295,6 +295,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 1.75rem 0 0.75rem 0;
+  max-width: 600px;
 }
 .section-footer .footer-first-content .footer-info .footer-info-details h2 .style-italic {
   font-style: italic;
@@ -460,6 +461,7 @@
   width: 100% !important;
   align-items: center;
   text-align: center;
+  padding: unset !important;
 }
 .story-container-page2 .story-info-page2 .story-content-page2 {
   display: flex;
@@ -755,8 +757,8 @@
 }
 .incrementing-counter .counter-wrapper .social-counter-container .counter-container .counter {
   font-family: "Taviraj", sans-serif;
-  font-size: 5rem;
-  line-height: 5.5rem;
+  font-size: 3rem;
+  line-height: 3.3rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
 }
@@ -1119,16 +1121,48 @@ html {
 }
 
 @media screen and (max-width: 767px) {
-  h1 {
+  h1,
+  .style-italic {
     font-size: 3rem !important;
     line-height: 3.3rem !important;
   }
-  h2 {
+  h2,
+  .style-italic {
     font-size: 3rem !important;
     line-height: 3.3rem !important;
   }
-  h3 {
+  h3,
+  .style-italic {
     font-size: 2rem !important;
     line-height: 2.2rem !important;
+  }
+  .story-section {
+    padding: 6rem 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .story-section {
+    padding: 6rem 2rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .story-section {
+    padding: 6rem 3rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .story-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .story-container .story-info {
+    width: 100% !important;
+    margin-bottom: 4rem;
+  }
+  .story-container .story-info .story-content {
+    max-width: unset !important;
+  }
+  .story-container .story-section-img {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */

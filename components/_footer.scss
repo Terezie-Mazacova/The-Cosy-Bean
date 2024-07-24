@@ -59,6 +59,7 @@
                     text-transform: uppercase;
                     text-align: center;
                     margin: 1.75rem 0 .75rem 0;
+                    max-width: 600px;
 
                     .style-italic {
                         @include italic-h2;

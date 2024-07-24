@@ -359,18 +359,61 @@ html {
 // == BREAKPOINTS ==
 
 @media screen and (max-width: 767px) {
-    h1 {
+    h1,
+    .style-italic {
         font-size: 3rem !important;
         line-height: 3.3rem !important;
     }
 
-    h2 {
+    h2,
+    .style-italic {
         font-size: 3rem !important;
         line-height: 3.3rem !important;
     }
 
-    h3 {
+    h3,
+    .style-italic {
         font-size: 2rem !important;
         line-height: 2.2rem !important;
+    }
+
+    // == Introductory Section About Our Story ==
+    .story-section {
+        padding: 6rem 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    // == Introductory Section About Our Story ==
+    .story-section {
+        padding: 6rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+    // == Introductory Section About Our Story ==
+    .story-section {
+        padding: 6rem 3rem;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    // == Introductory Section About Our Story ==
+    .story-container {
+        display: flex;
+        flex-direction: column;
+
+        .story-info {
+            width: 100% !important;
+            margin-bottom: 4rem;
+
+            .story-content {
+                max-width: unset !important;
+            }
+        }
+
+        .story-section-img {
+            width: 100% !important;
+        }
     }
 }
