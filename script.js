@@ -100,6 +100,10 @@ function openPopup(popupId) {
     popup.classList.remove('close-popup');
     popup.classList.add('open-popup');
 
+    let overlay = document.getElementById('overlay');
+    overlay.classList.add('open-overlay');
+
+    document.body.classList.add('no-scroll');
 }
 
 function closePopup(popupId) {
@@ -107,6 +111,10 @@ function closePopup(popupId) {
     popup.classList.remove('open-popup');
     popup.classList.add('close-popup');
 
+    let overlay = document.getElementById('overlay');
+    overlay.classList.remove('open-overlay');
+
+    document.body.classList.remove('no-scroll');
 }
 
 function closeAllPopups() {
@@ -115,7 +123,13 @@ function closeAllPopups() {
         popup.classList.remove('open-popup');
         popup.classList.add('close-popup');
     });
+
+    let overlay = document.getElementById('overlay');
+    overlay.classList.remove('open-overlay');
+
+    document.body.classList.remove('no-scroll');
 }
+
 
 
 // == TIMELINE ==

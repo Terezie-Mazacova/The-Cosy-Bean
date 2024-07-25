@@ -999,6 +999,7 @@ html {
   visibility: hidden;
   overflow: hidden;
   transition: transform 0.4s, bottom 0.4s, visibility 0.4s;
+  z-index: 200;
 }
 .main-container .popup .popup-images {
   position: relative;
@@ -1082,6 +1083,20 @@ html {
   bottom: -100%;
   transform: translate(-50%, 0);
   transition: transform 0.8s, bottom 0.8s, visibility 0.8s;
+}
+.main-container .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  transition: visibility 0.4s;
+  z-index: 100;
+}
+.main-container .overlay.open-overlay {
+  visibility: visible;
 }
 
 .no-scroll {
