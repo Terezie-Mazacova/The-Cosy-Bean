@@ -1154,10 +1154,21 @@ html {
   .story-section {
     padding: 6rem 1rem;
   }
+  .drink-list {
+    flex-wrap: unset !important;
+    flex-direction: column;
+  }
+  .drink-list .drink-item {
+    border: none !important;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .story-section {
     padding: 6rem 2rem;
+  }
+  .drink-item {
+    flex-basis: calc(50% - 20px) !important;
+    border: none !important;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
