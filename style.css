@@ -893,7 +893,6 @@ html {
   max-width: 90rem;
   margin: 0 auto;
   width: 100%;
-  padding-left: 1.5rem;
 }
 .main-container .menu-info .menu-chapter {
   display: flex;
@@ -939,7 +938,7 @@ html {
 .main-container .drink-popup .drink-list .drink-item {
   display: flex;
   flex-direction: column;
-  flex-basis: calc(33.33% - 20px);
+  flex-basis: 33.33%;
   align-items: center;
   gap: 1.5rem;
   padding: 24px 24px 48px 24px;
@@ -949,6 +948,7 @@ html {
 }
 .main-container .drink-popup .drink-list .drink-item .drink-img {
   width: 100%;
+  height: 100%;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
 }
@@ -986,6 +986,10 @@ html {
 }
 .main-container .drink-popup .drink-list .drink-item:nth-child(3n) {
   border-right: none;
+  padding-right: 0 !important;
+}
+.main-container .drink-popup .drink-list .drink-item:nth-child(3n+1) {
+  padding-left: 0 !important;
 }
 .main-container .popup {
   width: 500px;
