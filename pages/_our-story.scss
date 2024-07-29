@@ -182,28 +182,29 @@
             }
 
             .first-text-small {
-                top: -1% !important;
+                top: -1px !important;
             }
 
 
             .bi-dot {
                 position: absolute;
                 width: 40px;
-                left: -3.7%;
-                top: 7%;
+                left: -26px;
+                top: 70px;
                 font-size: 50px;
                 color: #fff;
                 z-index: 5;
             }
 
             .left-dot {
-                left: 96.2%;
+                left: 99%;
+                transform: translateX(-50%);
             }
 
             .right-text-small {
                 position: absolute;
-                left: -15%;
-                top: 8%;
+                left: -100px;
+                top: 80px;
                 z-index: 5;
                 color: $primary-color;
                 opacity: 50%;
@@ -214,9 +215,8 @@
             }
             
             .left-text-small {
-                position: absolute;
-                left: 104%;
-                top: 8%;
+                left: 102%;
+                transform: translateX(calc(-50% + 50px));
             }
 
             .text-box {
@@ -340,7 +340,7 @@
     }
 
     .timeline::after {
-        left: 1% !important;
+        left: 10px !important;
     }
 
     .container {
@@ -355,19 +355,26 @@
 
     .right-container,
     .left-container {
-        left: 5% !important;
+        left: 20px !important;
+        
     }
 
     .bi-dot,
     .left-dot {
-        left: -13.4% !important;
-        top: 2% !important;
+        left: -37px !important;
+        top: 15px !important;
+        transform: unset !important;
     }
 
     .right-text-small,
     .left-text-small {
-        top: 4% !important;
-        left: 5% !important;
+        top: 30px !important;
+        left: 9px !important;
+        transform: unset !important;
+    }
+
+    .text-box-header-mq {
+        padding-top: 45px;
     }
 }
 
@@ -380,6 +387,12 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .section-time-line {
         padding: 6rem 2rem;
+    }
+
+
+    .left-dot {
+        left: 98% !important;
+        transform: translateX(-50%);
     }
 }
 
