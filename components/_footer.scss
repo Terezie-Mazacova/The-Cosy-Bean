@@ -6,23 +6,26 @@
     overflow: hidden;
 
     .bg-footer {
-        img {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 687px;
+        height: 687px;
+        border-radius: 999px;
+
+        img,
+        .darken-img {
             position: absolute;
-            top: 30%;
-            left: 36%;
-            width: 687px;
-            height: 687px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             border-radius: 999px;
             object-fit: cover;
         }
 
         .darken-img {
-            position: absolute;
-            top: 30%;
-            left: 36%;
-            width: 687px;
-            height: 687px;
-            border-radius: 999px;
             background-color: $second-color;
             opacity: 80%;
             z-index: 1;
@@ -113,6 +116,7 @@
 
             .site-authors {
                 display: flex;
+                align-items: center;
 
                 .credits-normal-text {
                     @include text-xsmall;
@@ -134,3 +138,52 @@
         }
     }
 }
+
+
+// == BREAKPOINTS ==
+@media screen and (max-width: 767px) {
+    .bg-footer {
+        display: none;
+    }
+
+    .footer-first-content {
+        padding: 6rem 1rem;
+    }
+
+    .footer-second-content {
+        padding: 0 1rem;
+
+        .terms-and-privacy {
+            ul {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer-second-content {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+    .footer-second-content {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .footer-second-content {
+        flex-direction: column;
+        align-items: center;
+
+        .site-authors {
+            margin-top: 1.25rem;
+            text-align: center;
+        }
+    }
+}
+
+
+
