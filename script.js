@@ -34,7 +34,21 @@ document.addEventListener( 'DOMContentLoaded', function() {
         interval: 1000,
         speed: 900000,
         arrows: false,
-        direction: 'rtl'
+        direction: 'rtl',
+        breakpoints: {
+            1200: {
+                perPage: 3,
+                gap: '15px',
+            },
+            992: {
+                perPage: 2,
+                gap: '10px',
+            },
+            768: {
+                perPage: 1,
+                gap: '5px',
+            }
+        }
     });
     splide1.mount();
 
