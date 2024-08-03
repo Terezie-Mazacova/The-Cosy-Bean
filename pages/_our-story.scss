@@ -52,8 +52,10 @@
 
     .team-story-detail {
         max-width: 39.0625rem;
+
         .style-italic {
             @include italic-h2;
+            @include text-huge;
         }
 
         h2 {
@@ -99,6 +101,7 @@
 
                 .style-italic {
                     @include italic-h2;
+                    @include text-huge;
                 }
             }
         }
@@ -326,48 +329,43 @@
 
 // == BREAKPOINTS ==
 @media screen and (max-width: 767px){
+    // == SECTION TIMELINE ==
     .timeline {
         margin: 50px auto;
-    }
 
-    .timeline::after {
-        left: 10px !important;
-    }
+        &::after {
+            left: 10px !important;
+        }
 
-    .container {
-        width: 100% !important;
-        padding-left: 10px !important;
-        padding-right: 25px !important;
-    }
+        .container {
+            width: 100% !important;
+            padding-left: 10px !important;
+            padding-right: 25px !important;
 
-    .text-box {
-        font-size: 13px;
-    }
+            .bi-dot,
+            .left-dot {
+                left: -37px !important;
+                top: 15px !important;
+                transform: unset !important;
+            }
 
-    .right-container,
-    .left-container {
-        left: 20px !important;
-        
-    }
+            .right-text-small,
+            .left-text-small {
+                top: 30px !important;
+                left: 9px !important;
+                transform: unset !important;
+            }
 
-    .bi-dot,
-    .left-dot {
-        left: -37px !important;
-        top: 15px !important;
-        transform: unset !important;
-    }
+            .text-box-header-mq {
+                padding-top: 45px;
+            }
+        }
 
-    .right-text-small,
-    .left-text-small {
-        top: 30px !important;
-        left: 9px !important;
-        transform: unset !important;
+        .right-container,
+        .left-container {
+            left: 20px !important;
+        }
     }
-
-    .text-box-header-mq {
-        padding-top: 45px;
-    }
-
 
     // == INCREMENTING COUNTER ==
     .social-counter-container {
@@ -376,6 +374,7 @@
 }
 
 @media screen and (max-width: 767px) {
+    // == SECTION TIMELINE ==
     .section-time-line {
         padding: 6rem 1rem;
     }
@@ -387,14 +386,14 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    // == SECTION TIMELINE
     .section-time-line {
         padding: 6rem 2rem;
-    }
 
-
-    .left-dot {
-        left: 98% !important;
-        transform: translateX(-50%);
+        .left-dot {
+            left: 98% !important;
+            transform: translateX(-50%);
+        }
     }
 
     // == INCREMENTING COUNTER ==
@@ -404,6 +403,7 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    // == SECTION TIMELINE ==
     .section-time-line {
         padding: 6rem 3rem;
     }

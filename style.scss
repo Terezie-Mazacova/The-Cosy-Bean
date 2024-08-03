@@ -76,6 +76,7 @@ html {
 
                     .style-italic {
                         @include italic-h2;
+                        @include text-huge;
                     }
                 }
 
@@ -133,6 +134,7 @@ html {
 
                 .style-italic {
                     @include italic-h2;
+                    @include text-huge;
                 }
             }
         }
@@ -227,7 +229,7 @@ html {
         position: absolute;
         bottom: -100%;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, 0%);
         text-align: center;
         color: #333;
         visibility: hidden;
@@ -377,59 +379,66 @@ html {
 
         .style-italic {
             @include italic-h2;
+            @include text-huge;
         }
     }
 }
 
 
 // == BREAKPOINTS ==
-
 @media screen and (max-width: 767px) {
     h1 {
         padding: 0 1rem;
     }
 
-    h1,
-    .style-italic {
+    h1 {
         font-size: 3rem !important;
         line-height: 3.3rem !important;
-    }
 
-    h2,
-    .style-italic {
+        .style-italic {
+            font-size: 3rem !important;
+            line-height: 3.3rem !important;
+        }
+    }
+    
+    h2 {
         font-size: 3rem !important;
         line-height: 3.3rem !important;
-    }
 
-    h3,
-    .style-italic {
+        .style-italic {
+            font-size: 3rem !important;
+            line-height: 3.3rem !important;
+        }
+    }
+    
+    h3 {
         font-size: 2rem !important;
         line-height: 2.2rem !important;
-    }
 
-    // == Introductory Section About Our Story ==
+        .style-italic {
+            font-size: 2rem !important;
+            line-height: 2.2rem !important;
+        }
+    }
+    
+
+    // == INTRODUCTORY SECTION ABOUT OUR STORY ==
     .story-section {
         padding: 6rem 1rem;
     }
 
-    // == Section popup ==
-    .drink-list {
-        flex-wrap: unset !important;
-        flex-direction: column;
-
-        .drink-item {
-            border: none !important;
-        }
-    }
-
+    // == SECTION POPUP ==
     .menu-info {
         padding: 0 1rem;
     }
 
     .drink-list {
+        flex-wrap: unset !important;
+        flex-direction: column;
         padding: 0 1rem;
 
         .drink-item {
+            border: none !important;
             padding: 24px 0 48px 0 !important;
         }
     }
@@ -441,17 +450,25 @@ html {
         padding: 0 2rem;
     }
 
-    // == Introductory Section About Our Story ==
+    // == INTRODUCTORY SECTION ABOUT OUR STORY ==
     .story-section {
         padding: 6rem 2rem;
     }
 
-    // == Section popup ==
-    .drink-item {
-        flex-basis: calc(50%) !important;
-        border: none !important
+    // == SECTION POPUP ==
+    .menu-info {
+        padding: 0 2rem;
     }
 
+    .drink-list {
+        padding: 0 2rem;
+
+        .drink-item {
+            flex-basis: calc(50%) !important;
+            border: none !important
+        }
+    }
+    
     .drink-item:nth-child(2n+1) {
         padding-left: 0 !important;
     }
@@ -460,33 +477,21 @@ html {
         border-right: none;
         padding-right: 0 !important;
     }
-
-
-    .drink-list {
-        padding: 0 2rem;
-    }
-
-    .menu-info {
-        padding: 0 2rem;
-    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
     h1 {
         padding: 0 3rem;
     }
-    // == Introductory Section About Our Story ==
+    // == INTRODUCTORY SECTION ABOUT OUR STORY ==
     .story-section {
         padding: 6rem 3rem;
     }
 
-
-
+    // == SECTION POPUP==
     .menu-info {
         padding: 0 3rem;
     }
-
-
 
     .drink-list {
         padding: 0 3rem;
@@ -494,7 +499,7 @@ html {
 }
 
 @media screen and (max-width: 1023px) {
-    // == Introductory Section About Our Story ==
+    // == INTRODUCTORY SECTION ABOUT OUR STORY ==
     .story-container {
         display: flex;
         flex-direction: column;

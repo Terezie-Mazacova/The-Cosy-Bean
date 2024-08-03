@@ -66,6 +66,7 @@
 
                     .style-italic {
                         @include italic-h2;
+                        @include text-huge;
                     }
                 }
 

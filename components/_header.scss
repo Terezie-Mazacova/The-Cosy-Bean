@@ -218,21 +218,18 @@
 
 // == BREAKPOINTS ==
 @media screen and (max-width: 767px) {
-    // == HEADER MENU == 
     .header-menu {
         padding: 2rem 1rem !important;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    // == HEADER MENU ==
     .header-menu {
         padding: 2rem 2rem !important;
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
-    // == HEADER MENU ==
     .header-menu {
         padding: 2rem 3rem !important;
     }
@@ -240,7 +237,6 @@
 
 
 @media screen and (max-width: 1023px) {
-    // == HEADER MENU == 
     .header-nav {
         display: none;
     }

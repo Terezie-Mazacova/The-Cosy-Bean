@@ -305,9 +305,9 @@
   font-style: italic;
   font-family: "Taviraj", sans-serif;
   font-weight: 300;
+  color: rgb(255, 255, 255);
   font-size: 4.125rem;
   line-height: 4.5375rem;
-  color: rgb(255, 255, 255);
 }
 .section-footer .footer-first-content .footer-info .footer-info-details .footer-opening-hours {
   color: rgb(255, 255, 255);
@@ -548,9 +548,9 @@
   font-style: italic;
   font-family: "Taviraj", sans-serif;
   font-weight: 300;
+  color: rgb(255, 255, 255);
   font-size: 4.125rem;
   line-height: 4.5375rem;
-  color: rgb(255, 255, 255);
 }
 .section-passionate-team .team-story-detail h2 {
   font-size: 4rem;
@@ -602,9 +602,9 @@
   font-style: italic;
   font-family: "Taviraj", sans-serif;
   font-weight: 300;
+  color: rgb(255, 255, 255);
   font-size: 4.125rem;
   line-height: 4.5375rem;
-  color: rgb(255, 255, 255);
 }
 .section-time-line .timeline {
   position: relative;
@@ -788,32 +788,29 @@
   .timeline::after {
     left: 10px !important;
   }
-  .container {
+  .timeline .container {
     width: 100% !important;
     padding-left: 10px !important;
     padding-right: 25px !important;
   }
-  .text-box {
-    font-size: 13px;
-  }
-  .right-container,
-  .left-container {
-    left: 20px !important;
-  }
-  .bi-dot,
-  .left-dot {
+  .timeline .container .bi-dot,
+  .timeline .container .left-dot {
     left: -37px !important;
     top: 15px !important;
     transform: unset !important;
   }
-  .right-text-small,
-  .left-text-small {
+  .timeline .container .right-text-small,
+  .timeline .container .left-text-small {
     top: 30px !important;
     left: 9px !important;
     transform: unset !important;
   }
-  .text-box-header-mq {
+  .timeline .container .text-box-header-mq {
     padding-top: 45px;
+  }
+  .timeline .right-container,
+  .timeline .left-container {
+    left: 20px !important;
   }
   .social-counter-container {
     flex-direction: column;
@@ -831,7 +828,7 @@
   .section-time-line {
     padding: 6rem 2rem;
   }
-  .left-dot {
+  .section-time-line .left-dot {
     left: 98% !important;
     transform: translateX(-50%);
   }
@@ -920,9 +917,9 @@ html {
   font-style: italic;
   font-family: "Taviraj", sans-serif;
   font-weight: 300;
+  color: rgb(255, 255, 255);
   font-size: 4.125rem;
   line-height: 4.5375rem;
-  color: rgb(255, 255, 255);
 }
 .story-section .story-container .story-info .story-content p {
   font-size: 1.125rem;
@@ -990,9 +987,9 @@ html {
   font-style: italic;
   font-family: "Taviraj", sans-serif;
   font-weight: 300;
+  color: rgb(255, 255, 255);
   font-size: 4.125rem;
   line-height: 4.5375rem;
-  color: rgb(255, 255, 255);
 }
 .main-container .drink-popup {
   position: relative;
@@ -1071,7 +1068,7 @@ html {
   position: absolute;
   bottom: -100%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 0%);
   text-align: center;
   color: #333;
   visibility: hidden;
@@ -1208,47 +1205,52 @@ html {
   font-style: italic;
   font-family: "Taviraj", sans-serif;
   font-weight: 300;
+  color: rgb(255, 255, 255);
   font-size: 4.125rem;
   line-height: 4.5375rem;
-  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 767px) {
   h1 {
     padding: 0 1rem;
   }
-  h1,
-  .style-italic {
+  h1 {
     font-size: 3rem !important;
     line-height: 3.3rem !important;
   }
-  h2,
-  .style-italic {
+  h1 .style-italic {
     font-size: 3rem !important;
     line-height: 3.3rem !important;
   }
-  h3,
-  .style-italic {
+  h2 {
+    font-size: 3rem !important;
+    line-height: 3.3rem !important;
+  }
+  h2 .style-italic {
+    font-size: 3rem !important;
+    line-height: 3.3rem !important;
+  }
+  h3 {
+    font-size: 2rem !important;
+    line-height: 2.2rem !important;
+  }
+  h3 .style-italic {
     font-size: 2rem !important;
     line-height: 2.2rem !important;
   }
   .story-section {
     padding: 6rem 1rem;
   }
-  .drink-list {
-    flex-wrap: unset !important;
-    flex-direction: column;
-  }
-  .drink-list .drink-item {
-    border: none !important;
-  }
   .menu-info {
     padding: 0 1rem;
   }
   .drink-list {
+    flex-wrap: unset !important;
+    flex-direction: column;
     padding: 0 1rem;
   }
   .drink-list .drink-item {
+    border: none !important;
     padding: 24px 0 48px 0 !important;
   }
 }
@@ -1259,7 +1261,13 @@ html {
   .story-section {
     padding: 6rem 2rem;
   }
-  .drink-item {
+  .menu-info {
+    padding: 0 2rem;
+  }
+  .drink-list {
+    padding: 0 2rem;
+  }
+  .drink-list .drink-item {
     flex-basis: 50% !important;
     border: none !important;
   }
@@ -1269,12 +1277,6 @@ html {
   .drink-item:nth-child(2n) {
     border-right: none;
     padding-right: 0 !important;
-  }
-  .drink-list {
-    padding: 0 2rem;
-  }
-  .menu-info {
-    padding: 0 2rem;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
