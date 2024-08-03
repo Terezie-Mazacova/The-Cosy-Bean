@@ -206,14 +206,17 @@ html {
                     }
                 }
 
-                &:nth-child(3n){
-                    border-right: none;
-                    padding-right: 0 !important;
+                @media (min-width: 1024px) {
+                    &:nth-child(3n){
+                        border-right: none;
+                        padding-right: 0 !important;
+                    }
+    
+                    &:nth-child(3n+1) {
+                        padding-left: 0 !important;
+                    }
                 }
-
-                &:nth-child(3n+1) {
-                    padding-left: 0 !important;
-                }
+                
             }
         }
     }
@@ -382,6 +385,10 @@ html {
 // == BREAKPOINTS ==
 
 @media screen and (max-width: 767px) {
+    h1 {
+        padding: 0 1rem;
+    }
+
     h1,
     .style-italic {
         font-size: 3rem !important;
@@ -414,9 +421,26 @@ html {
             border: none !important;
         }
     }
+
+    .menu-info {
+        padding: 0 1rem;
+    }
+
+    .drink-list {
+        padding: 0 1rem;
+
+        .drink-item {
+            padding: 24px 0 48px 0 !important;
+        }
+    }
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        padding: 0 2rem;
+    }
+
     // == Introductory Section About Our Story ==
     .story-section {
         padding: 6rem 2rem;
@@ -424,15 +448,48 @@ html {
 
     // == Section popup ==
     .drink-item {
-        flex-basis: calc(50% - 20px) !important;
+        flex-basis: calc(50%) !important;
         border: none !important
+    }
+
+    .drink-item:nth-child(2n+1) {
+        padding-left: 0 !important;
+    }
+
+    .drink-item:nth-child(2n) {
+        border-right: none;
+        padding-right: 0 !important;
+    }
+
+
+    .drink-list {
+        padding: 0 2rem;
+    }
+
+    .menu-info {
+        padding: 0 2rem;
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    h1 {
+        padding: 0 3rem;
+    }
     // == Introductory Section About Our Story ==
     .story-section {
         padding: 6rem 3rem;
+    }
+
+
+
+    .menu-info {
+        padding: 0 3rem;
+    }
+
+
+
+    .drink-list {
+        padding: 0 3rem;
     }
 }
 
