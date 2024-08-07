@@ -265,13 +265,6 @@
 }
 
 
-
-
-
-
-
-
-
 // == INCREMENTING COUNTER ==
 .incrementing-counter {
     padding: 6rem 0;
@@ -329,7 +322,17 @@
 
 // == BREAKPOINTS ==
 @media screen and (max-width: 767px){
+    // == Team SECTION ABOUT TEAM ==
+    .subsection-team-story {
+        padding: 0 1rem 4rem 1rem;
+    }
+
+
     // == SECTION TIMELINE ==
+    .section-time-line {
+        padding: 6rem 1rem;
+    }
+
     .timeline {
         margin: 50px auto;
 
@@ -368,24 +371,23 @@
     }
 
     // == INCREMENTING COUNTER ==
-    .social-counter-container {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    // == SECTION TIMELINE ==
-    .section-time-line {
-        padding: 6rem 1rem;
-    }
-
-    // == INCREMENTING COUNTER ==
     .incrementing-counter {
         padding: 6rem 1rem;
+
+        .social-counter-container {
+            flex-direction: column;
+        }
     }
+    
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    // == Team SECTION ABOUT TEAM ==
+    .subsection-team-story {
+        padding: 0 2rem 4rem 2rem;
+    }
+
     // == SECTION TIMELINE
     .section-time-line {
         padding: 6rem 2rem;
@@ -403,6 +405,11 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    // == Team SECTION ABOUT TEAM ==
+    .subsection-team-story {
+        padding: 0 3rem 4rem 3rem;
+    }
+
     // == SECTION TIMELINE ==
     .section-time-line {
         padding: 6rem 3rem;

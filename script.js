@@ -51,7 +51,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
         }
     });
     splide1.mount();
+} );
 
+document.addEventListener( 'DOMContentLoaded', function() {
     var splide2 = new Splide( '.slider2', {
         perPage: 4,
         gap: '20px',
@@ -78,7 +80,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
         }
     });
     splide2.mount();
+} );
 
+document.addEventListener( 'DOMContentLoaded', function() {
     var splide3 = new Splide( '.slider3', {
         perPage: 4,
         gap: '20px',
@@ -230,6 +234,3 @@ hamburger.addEventListener('click', function() {
         this.style.right = 'auto';
     }
 });
-
-
-
