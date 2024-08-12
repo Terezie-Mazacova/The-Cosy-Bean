@@ -1217,6 +1217,22 @@ html {
   line-height: 4.5375rem;
 }
 
+.hidden {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
 @media screen and (max-width: 767px) {
   h1 {
     padding: 0 1rem;

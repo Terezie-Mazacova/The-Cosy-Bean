@@ -10,6 +10,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+// == CODE FOR SCROLL ANIMATION ==
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show')
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+
 // == CODE FOR SMOOTH SCROLL FROM OUR STORY PAGE TO HOME PAGE
 function goToDrinks() {
     window.location.href = 'index.html#drinks';
@@ -20,7 +37,6 @@ window.onload = function() {
         document.querySelector('#drinks').scrollIntoView({ behavior: 'smooth' });
     }
 };
-
 
 
 // === SLIDERS ===

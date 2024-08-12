@@ -44,6 +44,7 @@ html {
 }
 
 // == Introductory Section About Our Story ==
+
 .story-section {
     padding: 6rem 0;
     background-color: $second-color;
@@ -381,6 +382,25 @@ html {
             @include italic-h2;
             @include text-huge;
         }
+    }
+}
+
+// == CODE FOR SCROLL ANIMATION ==
+.hidden {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
     }
 }
 
