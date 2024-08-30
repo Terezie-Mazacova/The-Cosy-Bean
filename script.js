@@ -165,7 +165,6 @@ function closeAllPopups() {
 }
 
 
-
 // == TIMELINE ==
 document.addEventListener("DOMContentLoaded", function() {
     const elements = document.querySelectorAll('.container');
