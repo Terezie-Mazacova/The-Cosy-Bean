@@ -1273,6 +1273,9 @@ html {
     border: none !important;
     padding: 24px 0 48px 0 !important;
   }
+  .popup {
+    width: calc(100% - 40px) !important;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   h1 {

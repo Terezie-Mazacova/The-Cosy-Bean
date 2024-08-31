@@ -461,6 +461,10 @@ html {
             padding: 24px 0 48px 0 !important;
         }
     }
+
+    .popup {
+        width: calc(100% - 40px) !important;
+    }
 }
 
 
