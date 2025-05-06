@@ -331,42 +331,42 @@
     // == SECTION TIMELINE ==
     .section-time-line {
         padding: 6rem 1rem;
-    }
 
-    .timeline {
-        margin: 50px auto;
-
-        &::after {
-            left: 10px !important;
-        }
-
-        .container {
-            width: 100% !important;
-            padding-left: 10px !important;
-            padding-right: 25px !important;
-
-            .bi-dot,
-            .left-dot {
-                left: -37px !important;
-                top: 15px !important;
-                transform: unset !important;
+        .timeline {
+            margin: 50px auto;
+    
+            &::after {
+                left: 10px;
             }
-
-            .right-text-small,
-            .left-text-small {
-                top: 30px !important;
-                left: 9px !important;
-                transform: unset !important;
+    
+            .container {
+                width: 100%;
+                padding-left: 10px;
+                padding-right: 25px;
+    
+                .bi-dot,
+                .left-dot {
+                    left: -37px;
+                    top: 15px;
+                    transform: unset;
+                }
+    
+                .right-text-small,
+                .left-text-small {
+                    top: 30px;
+                    left: 9px;
+                    transform: unset;
+                }
+    
+                .text-box-header-mq {
+                    padding-top: 45px;
+                }
             }
-
-            .text-box-header-mq {
-                padding-top: 45px;
+    
+            .right-container,
+            .left-container {
+                left: 20px;
             }
-        }
-
-        .right-container,
-        .left-container {
-            left: 20px !important;
         }
     }
 
@@ -392,9 +392,13 @@
     .section-time-line {
         padding: 6rem 2rem;
 
-        .left-dot {
-            left: 98% !important;
-            transform: translateX(-50%);
+        .timeline {
+            .container {
+                .left-dot {
+                    left: 98%;
+                    transform: translateX(-50%);
+                }
+            }
         }
     }
 
